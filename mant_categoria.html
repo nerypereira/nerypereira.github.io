@@ -375,7 +375,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Cargas</h1>
+                        <h1 class="page-header text-overflow">Categoría</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -385,8 +385,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">PERSONAL</a></li>
-                        <li class="active">Ingreso de Cargas</li>
+                        <li><a href="#">Personal</a></li>
+                        <li class="active">Mantenedor</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -401,252 +401,61 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Antecedentes  de Carga Familiar</h3>
+                                    <h3 class="panel-title">Categoría</h3>
                                 </div>
                                 <div class="panel-body">
 
                                     <div class="row">
                                             <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Rut del Trabajador</label>
+                                                        <label class="control-label">Código Categoría</label>
                                                         <input type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Nombre Completo</label>
+                                                        <label class="control-label">Nombre Categoría</label>
                                                         <input type="text" class="form-control">
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                        <div class="col-sm-6">
+                                                                <div class="panel-footer text-right">
+                                                                        <button class="btn btn-success" type="submit">Nuevo</button>
+                                                                    </div>
+                                        
+                                                         </div>
         
+                                                         <div class="col-sm-6">
+                                                                <div class="panel-footer text-right">
+                                                                        <button class="btn btn-success" type="submit">Guardar</button>
+                                                                    </div>
+                                        
+                                                         </div>
+                
+
+                                                </div>
+                                                
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Tipo Carga</label>
-                                                <select class="form-control" data-placeholder="Seleccione...">
-                                                <option value="United States">Seleccione...</option>
-                                                <option value="United States">Informativa</option>
-                                                <option value="United Kingdom">Normal</option>
-                                                <option value="United Kingdom">Duplo</option>
-                                                <option value="United Kingdom">Maternal</option>
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Fecha de Ingreso</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Rut</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Nombre</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Paterno</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Materno</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Fecha Nacimiento</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Nacionalidad</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Sexo</label>
-                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
-                                                        <option value="">Seleccione...</option>
-                                                        <option value="femenino">Femenino</option>
-                                                        <option value="masculino">Masculino</option>
-                                                    </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Parentezco</label>
-                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
-                                                        <option value="United States">Seleccione...</option>
-                                                        <option value="United States">Hijo(a)</option>
-                                                        <option value="United Kingdom">Conyuge(a)</option>
-                                                        <option value="United Kingdom">Madre</option>
-                                                        <option value="United Kingdom">Padre</option>
-                                                    </select>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Email</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Teléfono</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                                   
                                    
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label for="licencia-conducir">Estudiante</label>
-                                            <select class="form-control" data-placeholder="Seleccione..." id="licencia-conducir" tabindex="2">
-                                                <option value="">Seleccione...</option>
-                                                <option value="">Si</option>
-                                                <option value="">No</option>                                                   
-                                            </select>
-                                        </div>
-                                    </div>
+                                                        
+                                  
 
-
+                                                
+                                   
+                             
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Prórroga</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <label for="prorroga">Tiene Prórroga</label>
-                                                <select class="form-control" data-placeholder="Seleccione..." id="prorroga" tabindex="2">
-                                                    <option value="">Seleccione...</option>
-                                                    <option value="">Si</option>
-                                                    <option value="">No</option>                                                   
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Fecha Prórroga</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                               
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">N° de  Orden de Prórroga</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
 
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Fecha Término de Prórroga</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Motivo de Prórroga</label>
-                                                    <textarea class="form-control" rows="5"></textarea>
-    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Plan de Salud</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Monto Pactado</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Fecha Ingreso</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                               
-                                        </div>                                      
-                                                                              
-                                        
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-
-                        </div>
+                       
+                      
 
                     </div>
+                   
                 </div>
+               
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -1254,77 +1063,146 @@
 
                                 <li class="list-divider"></li>
 
-                                 <!--Category name-->
-                                 <li class="list-header">Mantenedores</li>
-                                
-                               
- 
-                                  <!--Menu list item-->
-                                  <li>
-                                         <a href="mant_centro_costo.html">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Centro de Costo</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="mant_unidad.html">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Unidad</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="#">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">AFP</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="#">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Institución Salud</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
+                           
+                                <!--Category name-->
+                                <li class="list-header">Mantenedores</li>
+
+                                <!--Menu list item-->
+                                <li>
+                                        <a href="mant_centro_costo.html">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Centro de Costo</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="mant_unidad.html">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Unidad</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">AFP</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Institución Salud</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
                                         <a href="mant_categoria.html">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Categoría</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="#">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Nivel</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="#">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title">Tipo de Contrato</span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li>
-                                         <a href="#">
-                                             <i class="demo-pli-computer-secure"></i>
-                                             <span class="menu-title"></span>
-                                             <i class="arrow"></i>
-                                         </a>    
-                                        
-                                  </li>
-                                  <li class="list-divider"></li>
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Categoría</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Nivel</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Tipo de Contrato</span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title"></span>
+                                            <i class="arrow"></i>
+                                        </a>    
+                                       
+                                 </li>
+
+                                  <!--Category name-->
+                                <li class="list-header">MANTENEDORES</li>
+
+                                <!--Menu list item-->
+                                <li>
+                                       <a href="mant_centro_costo.html">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Centro de Costo</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="mant_unidad.html">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Unidad</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">AFP</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Institución Salud</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Categoría</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Nivel</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title">Tipo de Contrato</span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+                                <li>
+                                       <a href="#">
+                                           <i class="demo-pli-computer-secure"></i>
+                                           <span class="menu-title"></span>
+                                           <i class="arrow"></i>
+                                       </a>    
+                                      
+                                </li>
+
+                                <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
