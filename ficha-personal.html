@@ -738,6 +738,7 @@
                                                <option value="United States">Seleccione...</option>
                                                <option value="United Kingdom">Salud</option>
                                                <option value="United Kingdom">Educacional</option>
+                                               <option value="United Kingdom">Casa Central</option>
                                               
                                            </select>
                                            </div>
@@ -746,14 +747,15 @@
                                    <div class="row">
                                        <div class="col-sm-12">
                                            <div class="form-group">
-                                               <label class="control-label">Unidad</label>
+                                               <label class="control-label">Tipo Ley</label>
                                                <select class="form-control" data-placeholder="Seleccione...">
                                                <option value="United States">Seleccione...</option>
-                                               <option value="United States">ADMINISTRATIVOS</option>
-                                               <option value="United Kingdom">TECNICOS PARAMEDICO</option>
-                                               <option value="United Kingdom">PROFESIONALES</option>
-                                               <option value="United Kingdom">PROFESIONALES NO MEDICOS</option>
-                                               <option value="United Kingdom">AUXILIARES</option>
+                                               <option value="United States">19.378 (ESTATUTO DE ATENCIÓN PRIMARIA)</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                               <option value="United Kingdom">19.070 (ESTATUTO DOCENTE)</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO CON CONVENIO</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO SIN CONVENIO</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>
                                            </select>
                                            </div>
                                        </div>
@@ -761,16 +763,14 @@
                                    <div class="row">
                                        <div class="col-sm-12">
                                            <div class="form-group">
-                                               <label class="control-label">Categoría</label>
+                                               <label class="control-label">Tipo Contrato</label>
                                                <select class="form-control" data-placeholder="Seleccione...">
-                                               <option value="United States">Seleccione...</option>
-                                               <option value="United States">A</option>
-                                               <option value="United Kingdom">B</option>
-                                               <option value="United Kingdom">C</option>
-                                               <option value="United Kingdom">D</option>
-                                               <option value="United Kingdom">E</option>
-                                               <option value="United Kingdom">F</option>
-                                           </select>
+                                                    <option value="United States">Seleccione...</option>
+                                                    <option value="United States">PLAZO FIJO</option>
+                                                    <option value="United Kingdom">REEMPLAZO</option>
+                                                    <option value="United Kingdom">HONORARIO</option>
+                                                    <option value="United Kingdom">PLAZO INDEFINIDO</option>
+                                                </select>
                                            </div>
                                        </div>
                                    </div>
@@ -1402,78 +1402,42 @@
                                 </li>
                                 
                                 <li class="list-divider"></li>
-                                <!--Category name-->
-                                <li class="list-header">Mantenedores</li>
-                                
+
+                                  <!--Category name-->
+                                  <li class="list-header">MANTENEDORES</li>
+
+                               <!--Menu list item-->
+                               <li>
+                                    <a href="#">
+                                        <i class="demo-pli-computer-secure"></i>
+                                        <span class="menu-title">INTERNOS</span>
+                                        <i class="arrow"></i>
+                                    </a>  
+                                     <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
+
+
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="mant_sala_cuna.html">Sector</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="mant_tipo_ley.html">Tipo Ley</a></li>
+    
+    
+                                    </ul> 
+
+                                   
+                             </li>
                             
 
-                                 <!--Menu list item-->
-                                 <li>
-                                        <a href="mant_centro_costo.html">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Centro de Costo</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="mant_unidad.html">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Unidad</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">AFP</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Institución Salud</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="mant_categoria.html">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Categoría</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Nivel</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title">Tipo de Contrato</span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure"></i>
-                                            <span class="menu-title"></span>
-                                            <i class="arrow"></i>
-                                        </a>    
-                                       
-                                 </li>
+                           
 
-                                 <li class="list-divider"></li>
+                            <li class="list-divider"></li>
+
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
 
