@@ -475,39 +475,29 @@
 
                                     <div class="row">
                                         <div class="col-sm-6">
-                                             <div class="input-group mar-btm">
-                                                    <input type="estadoCivil" placeholder="Estado Civil" class="form-control">
-                                                    <div class="input-group-btn dropdown">
-                                                        <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
-                                                                Seleccione... <i class="dropdown-caret"></i>
-                                                        </button>
-                                                        <ul class="dropdown-menu dropdown-menu-right">
-                                                            <li><a href="#">Casado</a></li>
-                                                            <li><a href="#">Soltero</a></li>
-                                                            <li><a href="#">Divorciado</a></li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Estado Civil</label>
+                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                        <option value="">Seleccione...</option>
+                                                        <option value="femenino">Soltero(a)</option>
+                                                        <option value="masculino">Casado(a)</option>
+                                                         <option value="masculino">Viudo(a)</option>
+                                                    </select>
+                                            </div>
                                         </div>                                       
 
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="input-group mar-btm">
-                                                        <input type="email" placeholder="Nivel de Estudio" class="form-control">
-                                                        <div class="input-group-btn dropdown">
-                                                            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
-                                                                Seleccione... <i class="dropdown-caret"></i>
-                                                            </button>
-                                                            <ul class="dropdown-menu dropdown-menu-right">
-                                                                <li><a href="#">Media Completa</a></li>
-                                                                <li><a href="#">Técnico</a></li>
-                                                                <li><a href="#">Universitario</a></li>
-                                                                
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Nivel de Estudios</label>
+                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                        <option value="">Seleccione...</option>
+                                                        <option value="femenino">Media Completa</option>
+                                                        <option value="masculino">Técnico Completa</option>
+                                                         <option value="masculino">Universitaria Completa</option>
+                                                    </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1003,7 +993,7 @@
                                 <li>
                                     <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
-                                        <span class="menu-title">Selección</span>
+                                         <span class="menu-title">Reclutamiento</span>
                                         <i class="arrow"></i>
                                     </a>
 
@@ -1012,8 +1002,8 @@
                                     <!--Submenu-->
 
                                     <ul class="collapse">
-                                        <li><a href="mant_seleccion.html">Administrar Selección</a></li>
-                                        <li><a href="seleccion-personal.html">Perfil del Postulante</a></li>
+                                        <li><a href="mant_seleccion.html">Publicar</a></li>
+                                       <!-- <li><a href="seleccion-personal.html">Perfil del Postulante</a></li>-->
                                          <li><a href="buscar_postulantes.html">Buscar Postulantes</a></li>
 
                                     </ul>
@@ -1063,11 +1053,8 @@
                                     </a>
 
                                     <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="layouts-collapsed-navigation.html">Asignar Beneficios</a></li>
-                                        <li><a href="layouts-offcanvas-navigation.html">Publicar Beneficios</a></li>
+                                    <ul class="collapse">                                       
                                         <li><a href="mant_bienestar.html">Administrar Beneficios</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Presupuesto Bienestar</a></li>
                                        
                                     </ul>
                                 </li>
@@ -1264,11 +1251,24 @@
                                     <ul class="collapse">
                                         <li><a href="app-file-manager.html">Vacaciones</a></li>
                                         <li><a href="app-users.html">Permisos</a></li>
-                                        <li><a href="app-users-2.html">Solicitar Certificado</a></li>
-
-
+                                        
                                     </ul>
                                 </li>
+
+                                <li>
+                                        <a href="#">
+                                            <i class="demo-pli-computer-secure"></i>
+                                            <span class="menu-title">Ver Documentos</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="app-file-manager.html">Liquidaciones</a></li>
+                                            <li><a href="app-users.html">Certificados</a></li>  
+                                            <li><a href="app-users.html">Contratos y Anexos</a></li>                                        
+                                        </ul>
+                                    </li>
 
                                 <!--Menu list item-->
                                 <li>
@@ -1290,22 +1290,20 @@
 
                                 <!--Menu list item-->
                                 <li>
-                                    <a href="#">
-                                        <i class="demo-pli-mail"></i>
-                                        <span class="menu-title">Comunicados</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="mailbox.html">Publicar</a></li>
-                                        <li><a href="mailbox-message.html">Administrar</a></li>
-                                        <li><a href="mailbox-compose.html">Cumpleaños</a></li>
-
-
-                                    </ul>
-                                </li>
-
+                                        <a href="#">
+                                            <i class="demo-pli-mail"></i>
+                                            <span class="menu-title">Comunicados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                           
+    
+    
+                                        </ul>
+                                    </li>
 
 
 
