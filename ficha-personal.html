@@ -448,6 +448,16 @@
 
                                     </div>
                                     <div class="row">
+                                            <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Profesión o Actividad</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+
+                                            </div>
+
+                                    </div>
+                                    <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="control-label">Email</label>
@@ -750,36 +760,128 @@
                                    <h3 class="panel-title">Antecedentes Contractuales</h3>
                                </div>
                                <div class="panel-body">
+                                    <div class="row">
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Sindicalizado</label>
+                                                            <select class="form-control" data-placeholder="Seleccione...">
+                                                            <option value="United States">Seleccione...</option>
+                                                            <option value="United Kingdom">SI</option>
+                                                            <option value="United Kingdom">NO</option>                                                        
+                                                           
+                                                        </select>
+                                                        </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Con convenio</label>
+                                                            <select class="form-control" data-placeholder="Seleccione...">
+                                                            <option value="United States">Seleccione...</option>
+                                                            <option value="United Kingdom">SI</option>
+                                                            <option value="United Kingdom">NO</option>                                                        
+                                                           
+                                                        </select>
+                                                        </div>
+                                            </div>
+
+                                    </div> 
+
+
+
                                    <div class="row">
                                        <div class="col-sm-12">
                                            <div class="form-group">
                                                <label class="control-label">Sector</label>
-                                               <select class="form-control" data-placeholder="Seleccione...">
+                                               <select class="form-control" data-placeholder="Seleccione..." id="sector" onchange="ocultaTipoLey();">
                                                <option value="United States">Seleccione...</option>
-                                               <option value="United Kingdom">Salud</option>
-                                               <option value="United Kingdom">Educacional</option>
-                                               <option value="United Kingdom">Casa Central</option>
+                                               <option value="val1">Salud</option>
+                                               <option value="val2">Educacional</option>
+                                               <option value="val3">Casa Central</option>
                                               
                                            </select>
                                            </div>
                                        </div>
                                    </div>
-                                   <div class="row">
+                                   <script>
+                                    function ocultaTipoLey(){
+
+                                         if(document.getElementById('sector').value == "val1"){
+                                                //Datos para mostrar
+                                                document.getElementById('salud').style.display='';  
+                                                document.getElementById('categoria').style.display=''; 
+                                                document.getElementById('nivel').style.display='';
+
+                                                //Datos para ocultar 
+                                                document.getElementById('educacion').style.display='none';
+                                                document.getElementById('casaCentral').style.display='none';
+
+                                          }
+                                          if(document.getElementById('sector').value == "val2"){
+                                                //Datos para mostrar
+                                                document.getElementById('educacion').style.display='';       
+                                                //Datos para ocultar 
+                                                document.getElementById('salud').style.display='none';
+                                                document.getElementById('casaCentral').style.display='none';
+                                                document.getElementById('categoria').style.display='none'; 
+                                                document.getElementById('nivel').style.display='none';
+
+                                          }
+                                          if(document.getElementById('sector').value == "val3"){
+                                                //Datos para mostrar
+                                                document.getElementById('casaCentral').style.display='';       
+                                                //Datos para ocultar 
+                                                document.getElementById('educacion').style.display='none';
+                                                document.getElementById('salud').style.display='none';
+                                                document.getElementById('categoria').style.display='none'; 
+                                                document.getElementById('nivel').style.display='none';
+
+                                          }
+
+
+                                    }
+                                   
+                                   </script>
+                                  
+
+                                  
+                                   <div class="row" id="salud" style="display: none;">
                                        <div class="col-sm-12">
                                            <div class="form-group">
                                                <label class="control-label">Tipo Ley</label>
                                                <select class="form-control" data-placeholder="Seleccione...">
                                                <option value="United States">Seleccione...</option>
                                                <option value="United States">19.378 (ESTATUTO DE ATENCIÓN PRIMARIA)</option>
-                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>
-                                               <option value="United Kingdom">19.070 (ESTATUTO DOCENTE)</option>
-                                               <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO CON CONVENIO</option>
-                                               <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO SIN CONVENIO</option>
-                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>                                             
                                            </select>
                                            </div>
                                        </div>
                                    </div>
+                                   <div class="row" id="educacion" style="display: none;">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Tipo Ley</label>
+                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                <option value="United States">Seleccione...</option>                                      
+                                                <option value="United Kingdom">19.070 (ESTATUTO DOCENTE)</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO CON CONVENIO</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO SIN CONVENIO</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="casaCentral" style="display: none;">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Tipo Ley</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                    <option value="United States">Seleccione...</option>                                                   
+                                                    <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                    <div class="row">
                                        <div class="col-sm-12">
                                            <div class="form-group">
@@ -794,7 +896,30 @@
                                            </div>
                                        </div>
                                    </div>
-                                   <div class="row">
+                                   <div class="row" >
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Cargo</label>
+                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                <option value="United States">Seleccione...</option>
+                                                <option value="United States">Inspector General</option>
+                                                <option value="United Kingdom">Docente Enseñanza Media</option>   
+                                                <option value="United Kingdom">Docente Enseñanza Básica</option>                                             
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Función Laboral</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                    <option value="United States">Seleccione...</option>
+                                                    <option value="United States">Función de....</option>
+                                                    <option value="United Kingdom">Función de ...</option>                                             
+                                                </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                   <div class="row" id="categoria" style="display: none;">
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label class="control-label">Categoría</label>
@@ -810,7 +935,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                   <div class="row">
+                                   <div class="row" id="nivel" style="display: none;">
                                        <div class="col-sm-12">
                                            <div class="form-group">
                                                <label class="control-label">Nivel</label>
@@ -824,6 +949,47 @@
                                            </div>
                                        </div>
                                    </div>
+                                   <div class="row" >
+                                        <div class="col-sm-6">
+                                                     
+                                                <label class="control-label">Jornada Laboral</label>
+                                            <input type="text" class="form-control">                                  
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sueldo Bruto</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                         
+                                                    <div class="form-group">
+                                                            <label class="control-label">Fecha Inicio</label>
+                                                            <input type="date" class="form-control">
+                                                        </div>                                
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Fecha Término</label>
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="row" >
+                                                <div class="col-sm-6">
+                                                             
+                                                        <div class="form-group">
+                                                                <button class="btn btn-mint" type="button">Generar Contrato</button>
+                                                            
+                                                               
+                                                            </div>                                
+                                                </div>
+                                               
+                                            </div>
+                                               
+
                                </div>
                            </div>
 
@@ -1288,10 +1454,26 @@
                                     <ul class="collapse">
                                         <li><a href="ficha-personal.html">Ficha Personal</a></li>
                                          <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Entrega de Insumos</a></li>
+                                         <li><a href="crear_anexo.html">Ingreso Anexo Contrato</a></li>
 
                                     </ul>
                                 </li>
+                                 <!--Menu list item-->
+                                 <li>
+                                        <a href="#">
+                                            <i class="demo-pli-split-vertical-2"></i>
+                                            <span class="menu-title">Licencias/Orden Reposo</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="licencia_medica.html">Registrar Licencias</a></li>
+                                            <li><a href="orden_reposo.html">Ver Orden de Reposo</a></li>
+    
+    
+                                        </ul>
+                                    </li>
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1361,14 +1543,15 @@
 
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="layouts-collapsed-navigation.html">Realizar Cursos</a></li>
-                                        <li><a href="layouts-offcanvas-navigation.html">Entrega de Insumos</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Comité Paritario</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Registro de Accidentes</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">Investigación de Accidentes</a></li>
-                                        <li><a href="layouts-offcanvas-slide-in-navigation.html">costos de Accidentes</a></li>
-
-                                    </ul>
+                                            <li><a href="crear_curso_prevencion.html">Crear Cursos</a></li>
+                                            <li><a href="layouts-offcanvas-navigation.html">Ingresar Participantes</a></li>
+                                            <li><a href="entrega_epp.html">Entrega de EPP</a></li>
+                                            <li><a href="comite_paritario.html">Comité Paritario</a></li>
+                                            <li><a href="registro_accidente.html">Registro de Accidentes</a></li>
+                                            <li><a href="investigacion_accidente.html">Investigación de Accidentes</a></li>
+                                           
+    
+                                        </ul>
                                 </li>
                                 <!--Menu list item-->
                                 <li>
@@ -1396,83 +1579,64 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                    <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="forms-general.html">Ingreso Haberes</a></li>
-                                        <li><a href="forms-components.html">Ingresos Descuentos</a></li>
-                                        <li><a href="forms-validation.html">Imprimir Liquidaciones</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-receipt-4"></i>
-                                        <span class="menu-title">Contratos</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="tables-static.html">Ingreso Contrato</a></li>
-                                        <li><a href="tables-bootstrap.html">Ingreso Anexo</a></li>
-                                        <li><a href="tables-datatable.html">Imprimir contrato</a></li>
-
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-bar-chart"></i>
-                                        <span class="menu-title">Finiquitos</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="charts-morris-js.html">Calcular Finiquito</a></li>
-                                        <li><a href="charts-flot-charts.html">Ver borrador Finiquito</a></li>
-                                        <li><a href="charts-easy-pie-charts.html">Imprimir Finiquito</a></li>
-                                        <li><a href="charts-sparklines.html">Desvincular Trabajador</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-repair"></i>
-                                        <span class="menu-title">Certificados</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="misc-timeline.html">Certificado De Renta</a></li>
-                                        <li><a href="misc-maps.html">Certificado de Antigüedad</a></li>
-                                        <li><a href="xplugins-notifications.html">Certificado de Asistencia</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>
-                                    <a href="#">
-                                        <i class="demo-pli-warning-window"></i>
-                                        <span class="menu-title">Licencias</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="licencia_medica.html">Registrar Licencias</a></li>
-
-
-                                    </ul>
-                                </li>
+                                            <li><a href="#">Ingreso Haberes</a></li>
+                                            <li><a href="#">Ingresos Descuentos</a></li>
+                                            <li><a href="#">Imprimir Liquidaciones</a></li>
+    
+                                        </ul>
+                                    </li>
+    
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-receipt-4"></i>
+                                            <span class="menu-title">Contratos</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Ver Contrato</a></li>
+                                            <li><a href="crear_anexo.html">Ingreso Anexo</a></li>                                        
+    
+    
+                                        </ul>
+                                    </li>
+    
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-bar-chart"></i>
+                                            <span class="menu-title">Finiquitos</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Calcular Finiquito</a></li>
+                                            <li><a href="#">Ver borrador Finiquito</a></li>
+                                            <li><a href="#">Imprimir Finiquito</a></li>
+                                            <li><a href="#">Desvincular Trabajador</a></li>
+    
+                                        </ul>
+                                    </li>
+    
+                                    <!--Menu list item-->
+                                    <li>
+                                        <a href="#">
+                                            <i class="demo-pli-repair"></i>
+                                            <span class="menu-title">Certificados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="#">Certificado De Renta</a></li>
+                                            <li><a href="#">Certificado de Antigüedad</a></li>
+                                           
+                                        </ul>
+                                    </li>
                                 
                                 <li class="list-divider"></li>
 

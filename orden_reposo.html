@@ -40,9 +40,10 @@
 
     <!--Demo [ DEMONSTRATION ]-->
 
-    <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
+   <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
   <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+
 
 
 
@@ -127,6 +128,7 @@
                                     <div class="search-container collapse" id="nav-searchbox">
                                         <input id="search-input" type="text" class="form-control" placeholder="Buscar...">
                                     </div>
+                                    
                                 </form>
                             </div>
                         </li>
@@ -218,8 +220,7 @@
 
 
 
-
-                       <!--Notification dropdown-->
+                        <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -349,7 +350,6 @@
                         <!--End user dropdown-->
 
 
-
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -375,7 +375,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Categoría</h1>
+                        <h1 class="page-header text-overflow">Orden de Reposo</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -385,8 +385,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li class="active">Mantenedor</li>
+                        <li><a href="#">PERSONAL</a></li>
+                        <li class="active">Ver Orden de Reposo</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -401,202 +401,295 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Categoría</h3>
+                                    <h3 class="panel-title">Antecedentes de la Orden</h3>
                                 </div>
                                 <div class="panel-body">
-
                                     <div class="row">
+                                        <div class="col-sm-6">
+
+                                                <div class="input-group mar-btm">
+                                                        <input type="text" placeholder="Buscar Trabajador,N° Licencia..." class="form-control">
+                                                        <span class="input-group-btn">
+                                                        <a href="buscar_trabajador.html"><button class="btn btn-mint" type="button">Buscar</button></a>
+                                                    </span>
+                                                    </div>
+                                        </div>
+                                        <div class="col-sm-2">
+
+                                                <button class="btn btn-success" type="submit">Guardar</button>
+                                       </div>
+                                      
+                                                                           
+                                    </div>
+                                 
+
+                                    <div class="row" >
                                             <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Código Categoría</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
+                                                            <label class="control-label">Estado Interno Orden</label>
+                                                            <select class="form-control" data-placeholder="Seleccione...">
+                                                            <option value="United States">Seleccione...</option>
+                                                            <option value="valor1">En Apelación</option>
+                                                            <option value="valor2">No Pagada</option>
+                                                            <option value="valor2">Rechazada</option>
+                                                            <option value="valor2">Pagada</option>
+                                                           </select>
+                                                        </div>
+
+                                            </div>  
+                                            <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Nombre Categoría</label>
-                                                        <input type="text" class="form-control">
+                                                        <label class="control-label">Fecha de Emisión de la Orden</label>
+                                                        <input type="text" class="form-control" placeholder="25/04/1976">
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                        <div class="col-sm-6">
-                                                                <div class="panel-footer text-right">
-                                                                        <button class="btn btn-success" type="submit">Nuevo</button>
-                                                                    </div>
-                                        
-                                                         </div>
-        
-                                                         <div class="col-sm-6">
-                                                                <div class="panel-footer text-right">
-                                                                        <button class="btn btn-success" type="submit">Guardar</button>
-                                                                    </div>
-                                        
-                                                         </div>
-                
-
-                                                </div>
-                                                
                                     </div>
-                                   
-                                                        
-                                  
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">N° de Orden de Reposo</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                           
+    
+                                        </div>
+                                    <div class="row" >
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Código Unico Nacional (CUN)</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6"  >    
+                                            <div class="form-group">
+                                                <label class="control-label">Tipo Denuncia</label>
+                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                        <option value="United States">Seleccione...</option>
+                                                        <option value="valor1">DIAT</option>
+                                                        <option value="valor2">DIEP</option>                                                       
+                                                       </select>
+                                            </div>
+                                        </div>
 
-                                                
-                                   
-                             
+                                    </div>
 
+                                    <div class="row" >
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Fecha de la DIAT o DIEP</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>                                    
+
+
+                                    </div>
+                                    <div class="row" >
+                                            <div class="panel-heading">
+                                                    <h3 class="panel-title">Antecedentes del Trabajador</h3>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Nombre Completo del Trabajador</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>                                    
+    
+    
+                                    </div>
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Rut</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>  
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Teléfono</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>                                    
+    
+    
+                                    </div>
+
+                                    <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Dirección</label>
+                                                    <textarea class="form-control" rows="5"></textarea>
+    
+                                                </div>
+                                            </div>
+
+                                              
+                                    </div>
+                                 
+                                
+
+                                    <div class="row">
+                                            <div class="panel-heading">
+                                                    <h3 class="panel-title">Antecedentes del Empleador</h3>
+                                            </div> 
+                                            <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Nombre o Razón Social</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div> 
+                                        
+                                    </div>
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Rut</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>  
+                                           
+    
+                                    </div>
+
+                                    <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Dirección</label>
+                                                    <textarea class="form-control" rows="5"></textarea>
+    
+                                                </div>
+                                            </div>
+
+                                              
+                                    </div>
+                                                          
+
+
+                                      
+
+
+                                      
+                                         
+
+                                                 
+                                               
+                                        
+                                   
                                 </div>
                             </div>
                         </div>
 
-                       
-                      
+
+
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Datos de la Incapacidad Temporal</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        
+
+                                      
+                                       
+                                        <div class="row" >
+                                                <div class="col-sm-12">
+                                                        <h3 class="panel-title">Fecha del Reposo laboral</h3>
+                                                        <div class="form-group"  >
+                                                                <label class="control-label">Desde</label>
+                                                                <input type="date" class="form-control">
+                                                        </div>
+                                                 </div>   
+                                                 <div class="col-sm-12">
+                                                        <div class="form-group"  >
+                                                                <label class="control-label">Hasta</label>
+                                                                <input type="date" class="form-control">
+                                                        </div>
+                                                 </div>  
+                                                 <div class="col-sm-12">
+                                                        <div class="form-group"  >
+                                                                <label class="control-label">N° de Días</label>
+                                                                <input type="text" class="form-control">
+                                                        </div>
+                                                 </div>    
+         
+        
+
+                                        </div>
+                                     
+
+
+                                                                             
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                     
+                            
+                          
+                           
+                        </div>
+                        <div class="col-sm-4">
+                                <div class="panel">
+                                        <div class="panel-heading">
+                                                <h3 class="panel-title">Documentación Adjunta</h3>
+                                            </div>
+                                         <div class="panel-body">
+                                                <div class="row">
+                                                        <div class="col-sm-6">
+            
+                                                                <button class="btn btn-mint" type="submit">Generar Certificado</button>
+                                                            </div>
+                                                        <div class="col-sm-6">
+            
+                                                                <button class="btn btn-mint" type="submit">Obtener Liquidaciones</button>
+                                                            </div>
+                                                </div>
+             
+                                        </div>    
+                                </div>
+                          </div>
 
                     </div>
-                   
-                </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="panel">
+                               <div class="panel-heading">
+                                   <h3 class="panel-title">Antecedentes del Profesional</h3>
+                               </div>
+                               <div class="panel-body">
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Rut</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            
+    
+                                    </div>
 
-                <!-- Add Row -->
-					<!--===================================================-->
-					<div class="panel">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Add Row</h3>
-                            </div>
-                        
-                            <div id="demo-custom-toolbar2" class="table-toolbar-left">
-                                <button id="demo-dt-addrow-btn" class="btn btn-primary"><i class="demo-pli-plus"></i> Add row</button>
-                            </div>
-                        
-                            <div class="panel-body">
-                                <table id="demo-dt-addrow" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th class="min-tablet">Office</th>
-                                            <th class="min-tablet">Extn.</th>
-                                            <th class="min-desktop">Start date</th>
-                                            <th class="min-desktop">Salary</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2012/12/02</td>
-                                            <td>$372,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                            <td>San Francisco</td>
-                                            <td>59</td>
-                                            <td>2012/08/06</td>
-                                            <td>$137,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rhona Davidson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>Tokyo</td>
-                                            <td>55</td>
-                                            <td>2010/10/14</td>
-                                            <td>$327,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Colleen Hurst</td>
-                                            <td>Javascript Developer</td>
-                                            <td>San Francisco</td>
-                                            <td>39</td>
-                                            <td>2009/09/15</td>
-                                            <td>$205,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sonya Frost</td>
-                                            <td>Software Engineer</td>
-                                            <td>Edinburgh</td>
-                                            <td>23</td>
-                                            <td>2008/12/13</td>
-                                            <td>$103,600</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jena Gaines</td>
-                                            <td>Office Manager</td>
-                                            <td>London</td>
-                                            <td>30</td>
-                                            <td>2008/12/19</td>
-                                            <td>$90,560</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Quinn Flynn</td>
-                                            <td>Support Lead</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2013/03/03</td>
-                                            <td>$342,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charde Marshall</td>
-                                            <td>Regional Director</td>
-                                            <td>San Francisco</td>
-                                            <td>36</td>
-                                            <td>2008/10/16</td>
-                                            <td>$470,600</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Haley Kennedy</td>
-                                            <td>Senior Marketing Designer</td>
-                                            <td>London</td>
-                                            <td>43</td>
-                                            <td>2012/12/18</td>
-                                            <td>$313,500</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-               
+                                    <div class="row" >
+                                            <div class="col-sm-12"  >
+                                                    <div class="form-group">
+                                                        <label class="control-label">Nombre Completo</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                    </div>
+                              
+                                 
+                               
+                                                         
+                               </div>
+                           </div>
+
+                       </div>
+                     
+                    </div>
+                </div>
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -647,7 +740,7 @@
                         <!--================================-->
                         <div class="tab-content">
 
-                            <!--First tab (Contact list)-->
+                           <!--First tab (Contact list)-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <div class="tab-pane fade in active" id="demo-asd-tab-1">
                                 <p class="pad-all text-main text-sm text-uppercase text-bold">
@@ -746,6 +839,7 @@
                             </div>
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End first tab (Contact list)-->
+
 
 
                             <!--Second tab (Custom layout)-->
@@ -888,6 +982,7 @@
         <!--===================================================-->
         <!--END ASIDE-->
 
+
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
         <nav id="mainnav-container">
@@ -991,12 +1086,12 @@
 
                                 <!--Menu list item-->
                                 <li>
-                                        <a href="#">
-                                                <i class="demo-pli-split-vertical-2"></i>
-                                             <span class="menu-title">Reclutamiento</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
+                                    <a href="#">
+                                            <i class="demo-pli-split-vertical-2"></i>
+                                         <span class="menu-title">Reclutamiento</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
 
 
                                     <!--Submenu-->
@@ -1043,6 +1138,8 @@
     
                                         </ul>
                                     </li>
+                                
+                                    
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1056,7 +1153,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>   
+                                    </li>  
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1070,7 +1167,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>         
+                                    </li>          
 
                                 <!--Menu list item-->
                                 <li>
@@ -1097,10 +1194,9 @@
                                     </a>
 
                                     <!--Submenu-->
-                                    <ul class="collapse">                                   
+                                    <ul class="collapse">
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
-                                        
-
+                                       
                                     </ul>
                                 </li>
 
@@ -1208,12 +1304,13 @@
                                            
                                         </ul>
                                     </li>
+
+                               
                                 <li class="list-divider"></li>
 
-                           
                                   <!--Category name-->
                                   <li class="list-header">MANTENEDORES</li>
-                                  
+
                                <!--Menu list item-->
                                <li>
                                     <a href="#">
@@ -1236,7 +1333,7 @@
                                             <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
     
     
-                                    </ul>
+                                    </ul> 
                                     <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
@@ -1246,9 +1343,9 @@
                                             <li><a href="lista_funcion.html">Función Laboral</a></li>
     
     
-                                    </ul>  
+                                    </ul> 
                                     <ul class="collapse">
-                                            <li><a href="mant_centro_costo.html">Centro de Costo</a></li>
+                                            <li><a href="lista_centro_costo.html">Centro de Costo</a></li>
     
     
                                     </ul> 
@@ -1256,7 +1353,9 @@
                              </li>
                             
 
-                                <li class="list-divider"></li>
+                           
+
+                            <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
@@ -1312,22 +1411,22 @@
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
-                                    <a href="#">
-                                        <i class="demo-pli-mail"></i>
-                                        <span class="menu-title">Comunicados</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
-                                       
-
-
-                                    </ul>
-                                </li>
+                                <!--Menu list item-->
+                                <li>
+                                        <a href="#">
+                                            <i class="demo-pli-mail"></i>
+                                            <span class="menu-title">Comunicados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                           
+    
+    
+                                        </ul>
+                                    </li>
 
 
 
