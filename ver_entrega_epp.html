@@ -375,11 +375,10 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Sector</h1>
+                        <h1 class="page-header text-overflow">Ver Entrega de EPP</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-
 
 
                     <!--Breadcrumb-->
@@ -387,7 +386,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Mantenedor</li>
+                        <li class="active">EPP</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -402,37 +401,120 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Sector</h3>
+                                    <h3 class="panel-title"> Ver EPP</h3>
                                 </div>
                                 <div class="panel-body">
+                                        <div class="row">
+                                                <div class="panel-footer text-right">
+                                                        <a href="lista_epp.html">  <button class="btn btn-success" type="submit">Volver</button></a>
+                                               </div>
+
+                                        </div>
 
                                     <div class="row">
+                                                <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                        <label class="control-label">Rut</label>
+                                                        <input type="text" class="form-control"  placeholder="12.945.987-7">
+                                                       
+                                                    </div>
+                                                </div>
+                                                 <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">EPP</label>
+                                                        <input type="text" class="form-control"  placeholder="Guantes">
+                                                    </div>
+                                                </div>
+
+                                    </div>
+                                    
+
+                                    <div class="row">
+                                               
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Nombre del Trabajador</label>
+                                                        <input type="text" class="form-control"  placeholder="Camila Castro">
+                                                    </div>
+                                                </div>
+                                    </div> 
+                                    <div class="row">
+                                            <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                <label class="control-label">Fecha Entrega</label>
+                                                <input type="text" class="form-control"  placeholder="20/07/2018">
+                                            </div>
+                                            </div>
                                             <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Código del Sector</label>
-                                                        <input type="text" class="form-control">
+                                                        <label class="control-label">Fecha Cambio</label>
+                                                        <input type="text" class="form-control"  placeholder="20/08/2018">
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Nombre del Sector</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                        
-                                                    <div class="col-sm-6"></div>
-                                                         <div class="col-sm-6">
-                                                                <div class="panel-footer text-right">
-                                                                        <a href="lista_sector.html"><button class="btn btn-success" type="submit">Guardar</button></a>
-                                                                    </div>
-                                        
-                                                         </div>
-                
+                                            </div>
 
-                                                </div>
+
+                                    </div> 
+
+
+                                   <div class="row">
+                                               
+                                            <div class="col-sm-12">
                                                 
+                                                         <button class="btn btn-success" type="submit">Seleccione Archivo...</button>
+                                          
+                                    
+                                            </div>
+            
+
                                     </div>
+                                        <div class="row">
+                                                <div class="col-sm-12">
+                                                        <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                       
+                                                                        <th>Documento</th>
+                                                                        <th >Fecha</th> 
+                                                                                                                            
+                                                                      
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        
+                                                                        <td>Recibo.pdf</td>
+                                                                        <td>23/03/2018</td>
+                                                                      
+                                                                                                                                         
+                                                                    </tr>
+                                                                   
+                                                                  
+                                                                </tbody>
+                                                            </table>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="row">
+                                                    <div class="=col-sm-12">
+                                                            <div class="bord-top pad-ver">
+                                                                  
+                                                        
+                                                                    <div class="btn-group pull-right">
+                                                                            
+                                                                        <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
+                                                                            <i class="fa fa-upload-cloud"></i> Descargar
+                                                                        </button>
+                                                                        <button id="dz-remove-btn" class="btn btn-danger cancel" type="reset" disabled="">
+                                                                            <i class="demo-psi-trash"></i>
+                                                                        </button>
+                                                                    </div>
+                                                            </div>
+                                                    </div>
+        
+                                                </div> 
+                                            
+                                                
+                                    
                                    
                                                         
                                   
@@ -911,7 +993,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>  
+                                    </li>   
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -925,7 +1007,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>          
+                                    </li>         
 
                                 <!--Menu list item-->
                                 <li>
@@ -1012,7 +1094,8 @@
                                 <!--Category name-->
                                 <li class="list-header">Remuneraciones</li>
 
-                               
+                                
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1083,33 +1166,33 @@
                                 <li class="list-divider"></li>
 
                            
-                                 <!--Category name-->
-                                 <li class="list-header">MANTENEDORES</li>
+                               <!--Category name-->
+                               <li class="list-header">MANTENEDORES</li>
                                   
-                                 <!--Menu list item-->
-                                 <li>
-                                      <a href="#">
-                                          <i class="demo-pli-computer-secure"></i>
-                                          <span class="menu-title">INTERNOS</span>
-                                          <i class="arrow"></i>
-                                      </a>  
-                                       <!--Submenu-->
-                                      <ul class="collapse">
-                                          <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
-  
-  
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_sector.html">Sector</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
+                               <!--Menu list item-->
+                               <li>
+                                    <a href="#">
+                                        <i class="demo-pli-computer-secure"></i>
+                                        <span class="menu-title">INTERNOS</span>
+                                        <i class="arrow"></i>
+                                    </a>  
+                                     <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
+
+
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="lista_sector.html">Sector</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
+                                           <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
     
@@ -1119,15 +1202,14 @@
     
     
                                     </ul> 
-                                      <ul class="collapse">
+                                    <ul class="collapse">
                                             <li><a href="lista_centro_costo.html">Centro de Costo</a></li>
     
     
                                     </ul> 
-  
-                                     
-                               </li>
-                              
+                                   
+                             </li>
+                            
 
                                 <li class="list-divider"></li>
 
@@ -1145,9 +1227,9 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="solicitar_permiso.html">Permisos</a></li>
+                                        <li><a href="solicitar_permiso.html">Permisos</a></li> 
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                     
+
 
                                     </ul>
                                 </li>
@@ -1180,7 +1262,6 @@
                                             <li><a href="inf_aguinaldo.html">Aguinaldo</a></li>
                                             <li><a href="inf_escolar.html">Escolaridad</a></li>
                                             <li><a href="inf_salud.html">Salud</a></li>
-
                                     </ul>
                                 </li>
 
