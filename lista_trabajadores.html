@@ -378,18 +378,18 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Publicaciones</h1>
+                        <h1 class="page-header text-overflow">Listado de Ficha Personal</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-                    
+
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Reclutamiento</li>
+                        <li class="active">Contratación</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -407,29 +407,97 @@
                             <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h1 class="text-main">Ficha de Postulación</h1>
+                                    <h3 class="panel-title">Trabajadores</h3>
                                 </div>
 
                                 <div class="panel-body">
-                                                            
-                                        <div class="row">
-                                               
-                                                <div class="col-sm-8">
-                                                    <div class="panel-footer text-right">
-                                                            <a href="#"> <button class="btn btn-success" type="submit">Enviar Postulación</button></a>
-                                                    </div>
-                                                </div>
+                                    <div class="row">
 
-                                                    <div class="col-sm-4">
-                                                            <div class="panel-footer text-right">
-                                                                    <a href="ver_cargos_publicados.html"> <button class="btn btn-success" type="submit">Volver</button></a>
-                                                    </div>
-                                                </div>
-                                        
+                                        <div class="col-sm-10">
+
+                                            <div class="input-group mar-btm">
+                                                <input type="text" placeholder="Buscar" class="form-control">
+                                                <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Buscar</button>
+					                        </span>
+                                            </div>
+
+
+
+
                                         </div>
-                                   
 
-                                 
+                                        <div class="col-sm-2">
+
+
+                                            <a href="ficha-personal.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row"></div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th >Nombre</th>
+                                                        <th >Rut</th>  
+                                                        <th >Sector</th>  
+                                                        <th>Cargo</th>  
+                                                        <th >Tipo Ley</th>   
+                                                        <th >Tipo Contrato</th>                                                       
+                                                        <th class="min-desktop"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>10.234.456-8</td>
+                                                        <td>Educación</td>
+                                                        <td>Docente</td>
+                                                        <td>Estatuto Docente</td>
+                                                        <td>Plazo Fijo</td>
+                                                        <td style="text-align: center;">
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="#"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                    
+                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
+                                                            </div>
+                                                        </td>
+                                                        <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
+                                                            DE R</td> -->
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Camila Correa</td>
+                                                        <td>12.986.986-4</td>
+                                                        <td>Educación</td>
+                                                        <td>Inspector General</td>
+                                                        <td>Código del trabajo</td>
+                                                        <td>Indefinido</td>
+                                                        <td style="text-align: center;">
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><i class="demo-psi-pen-5 icon-xs"></i></button>
+                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                    
+                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                   
+
+                                                   
+
+                                                   
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
 
 
 
@@ -872,13 +940,13 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
-                                        <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
+                                         <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
                                          <li><a href="crear_anexo.html">Ingreso Anexo Contrato</a></li>
 
                                     </ul>
                                 </li>
-                                 <!--Menu list item-->
-                                 <li>
+                                <!--Menu list item-->
+                                <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Licencias/Orden Reposo</span>
@@ -893,6 +961,7 @@
     
                                         </ul>
                                     </li>
+
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -906,7 +975,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>   
+                                    </li> 
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -920,7 +989,8 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>     
+                                    </li>          
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -945,8 +1015,8 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                   <!--Submenu-->
-                                   <ul class="collapse">                                        
+                                  <!--Submenu-->
+                                  <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
                                        
                                         
@@ -969,6 +1039,7 @@
     
                                         </ul>
                                     </li>
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1005,7 +1076,7 @@
                                 <!--Category name-->
                                 <li class="list-header">Remuneraciones</li>
 
-                                
+                               
 
                                 <!--Menu list item-->
                                 <li>
@@ -1014,7 +1085,6 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
-
                                     <ul class="collapse">
                                             <li><a href="#">Ingreso Haberes</a></li>
                                             <li><a href="#">Ingresos Descuentos</a></li>
@@ -1143,8 +1213,11 @@
                                         <li><a href="solicitar_permiso.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
                                         
+
+
                                     </ul>
                                 </li>
+
                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-computer-secure"></i>
@@ -1158,7 +1231,7 @@
                                             <li><a href="app-users.html">Certificados</a></li>  
                                             <li><a href="app-users.html">Contratos y Anexos</a></li>                                        
                                         </ul>
-                                    </li>   
+                                    </li>
 
                                 <!--Menu list item-->
                                 <li>
@@ -1174,12 +1247,11 @@
                                             <li><a href="inf_aguinaldo.html">Aguinaldo</a></li>
                                             <li><a href="inf_escolar.html">Escolaridad</a></li>
                                             <li><a href="inf_salud.html">Salud</a></li>
-
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
+                              <!--Menu list item-->
+                              <li>
                                     <a href="#">
                                         <i class="demo-pli-mail"></i>
                                         <span class="menu-title">Comunicados</span>
