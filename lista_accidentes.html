@@ -378,7 +378,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Funciones</h1>
+                        <h1 class="page-header text-overflow">Registro de Accidentes</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -389,7 +389,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Funciones</li>
+                        <li class="active">Prevención</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -407,7 +407,7 @@
                             <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Funciones</h3>
+                                    <h3 class="panel-title">Accidentes</h3>
                                 </div>
 
                                 <div class="panel-body">
@@ -416,7 +416,7 @@
                                         <div class="col-sm-10">
 
                                             <div class="input-group mar-btm">
-                                                <input type="text" placeholder="Buscar" class="form-control">
+                                                <input type="text" placeholder="Buscar por Trabajador, Accidente, etc" class="form-control">
                                                 <span class="input-group-btn">
 					                            <button class="btn btn-mint" type="button">Buscar</button>
 					                        </span>
@@ -427,13 +427,7 @@
 
                                         </div>
 
-                                        <div class="col-sm-2">
-
-
-                                            <a href="mant_funcion.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
-
-
-                                        </div>
+                                       
                                     </div>
                                     <div class="row"></div>
 
@@ -442,20 +436,27 @@
                                             <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
-                                                        <th style="width: 150px;">Nombre</th>
-                                                        <th >Código</th>    
-                                                        <th >Descripción</th>                                                   
+
+                                                      
+                                                        <th >Trabajador</th>
+                                                        <th >Fecha Accidente</th>  
+                                                        <th >Tipo Accidente</th> 
+                                                        <th >Descripción</th>  
+                                                        <th >Días Perdidos</th>                                                                                                              
                                                         <th class="min-desktop"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td style="width: 100px;">Funciones de  ....</td>
-                                                        <td>COD-FUN01</td>
-                                                        <td>Realizar labores de ....</td>
+                                                           
+                                                        <td>Juan Pérez</td>                                                                                                               
+                                                        <td>15/09/2018</td>
+                                                        <td>Accidente de Trayecto</td>
+                                                        <td>Caída en moto</td>
+                                                        <td>20</td>
                                                         <td style="text-align: center;">
                                                             <div class="btn-group">
-                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="actualizar_funcion.html"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="ver_accidente.html"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
                                                                 <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
                     
                                                                 <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
@@ -465,9 +466,12 @@
                                                             DE R</td> -->
                                                     </tr>
                                                     <tr>
-                                                        <td style="width: 100px;">Funciones de .....</td>
-                                                        <td>COD-FUN02</td>
-                                                        <td>Realizar labores de ....</td>
+                                                           
+                                                            <td>Carlo Miranda</td>                                                                                                               
+                                                            <td>10/07/2018</td>
+                                                            <td>Accidente de Trabajo</td>
+                                                            <td>Corte con herramienta</td>
+                                                            <td>5</td>
                                                         <td style="text-align: center;">
                                                             <div class="btn-group">
                                                                 <button class="btn btn-primary btn-xs btn-icon btn-circle"><i class="demo-psi-pen-5 icon-xs"></i></button>
@@ -952,6 +956,7 @@
     
                                         </ul>
                                     </li>
+
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1005,8 +1010,8 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                   <!--Submenu-->
-                                   <ul class="collapse">                                        
+                                  <!--Submenu-->
+                                  <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
                                        
                                         
@@ -1044,8 +1049,8 @@
                                             <li><a href="layouts-offcanvas-navigation.html">Ingresar Participantes</a></li>
                                             <li><a href="entrega_epp.html">Entrega de EPP</a></li>
                                             <li><a href="comite_paritario.html">Comité Paritario</a></li>
-                                            <li><a href="registro_accidente.html">Registro de Accidentes</a></li>
-                                            <li><a href="investigacion_accidente.html">Investigación de Accidentes</a></li>
+                                           <li><a href="lista_accidente.html">Registro de Accidentes</a></li>
+                                            <li><a href="lista_investigaciones.html">Investigación de Accidentes</a></li>
                                            
     
                                         </ul>

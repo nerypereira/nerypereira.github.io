@@ -375,7 +375,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Comité Paritario</h1>
+                        <h1 class="page-header text-overflow">Investigación de Accidente</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -386,7 +386,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Comité Paritario</li>
+                        <li class="active">Prevención</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -401,9 +401,34 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Comité Paritario</h3>
+                                    <h3 class="panel-title">Investigación de Accidente</h3>
                                 </div>
                                 <div class="panel-body">
+                                        <div class="row">
+                                                <div class="panel-footer text-right">
+                                                        <a href="lista_investigaciones.html">  <button class="btn btn-success" type="submit">Volver</button></a>
+                                               </div>
+
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                                <label class="control-label">Rut del Trabajador</label>
+                                                                <input type="text" class="form-control">
+                                                         </div>  
+                                                </div>
+                                                <div class="col-sm-6">        
+                                                         <div class="form-group">
+                                                                <label class="control-label">Accidentes del Trabajador</label>
+                                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                                <option value="United States">Seleccione...</option>
+                                                                <option value="United States">Accidente1</option>
+                                                                <option value="United Kingdom">Accidente2</option>                                                               
+                                                            </select>
+                                                            </div>
+                                                </div>
+
+                                        </div>
 
                                     <div class="row">
                                                 <div class="col-sm-6">
@@ -412,18 +437,7 @@
                                                                 <input type="date" class="form-control">
                                                             </div>
                                                 </div>
-                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Tipo de Documento</label>
-                                                        <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
-                                                                <option value="">Seleccione...</option>
-                                                                <option value="femenino">Acta Constitución</option>
-                                                                <option value="masculino">Acta de Reunión</option>
-                                                                <option value="masculino">Recibo Inspección del Trabajo</option>
-                                                                <option value="masculino">Otro</option>
-                                                            </select>
-                                                    </div>
-                                                </div>
+                                                
 
                                     </div>
                                     
@@ -432,11 +446,22 @@
                                                
                                                 <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label class="control-label">Observación</label>
+                                                        <label class="control-label">Descripción del documento adjunto</label>
                                                         <textarea class="form-control" rows="5"></textarea>
                                                     </div>
                                                 </div>
                                     </div> 
+                                    <div class="row">
+                                               
+                                            <div class="col-sm-12">
+                                                <div class="panel-footer text-right">
+                                                         <button class="btn btn-success" type="submit">Seleccione Archivo...</button>
+                                                </div>
+                                    
+                                            </div>
+            
+
+                                </div>
                                     <div class="row">
                                             <div class="col-sm-12">
                                                     <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
@@ -444,27 +469,27 @@
                                                                 <tr>
                                                                     <th>Documento</th>
                                                                     <th >Fecha</th> 
-                                                                    <th >Tipo Documento</th>                                                       
+                                                                    <th >Descrición Documento</th>                                                       
                                                                   
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>Acta Comité.pdf</td>
+                                                                    <td>EvidenciaAccidente1.pdf</td>
                                                                     <td>23/03/2018</td>
-                                                                    <td>Acta de constitución</td>
+                                                                    <td>investigación comité paritario</td>
                                                                                                                                      
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>Inspección.pdf</td>
+                                                                        <td>EvidenciaAccidente2.pdf</td>
                                                                         <td>26/03/2018</td>
-                                                                        <td>Recibo Inspección del Trabajo</td>
+                                                                        <td>reporte de mutual</td>
                                                                    
                                                                 </tr>
                                                                 <tr>
-                                                                        <td>Acta Comité.pdf</td>
+                                                                        <td>fotografias.pdf</td>
                                                                         <td>12/04/2018</td>
-                                                                        <td>Acta de Reunión</td>
+                                                                        <td>fotografias del lugar</td>
                                                                    
                                                                 </tr>
                                                               
@@ -475,15 +500,11 @@
                                     <div class="row">
                                             <div class="=col-sm-12">
                                                     <div class="bord-top pad-ver">
-                                                            <!-- The fileinput-button span is used to style the file input field as button -->
-                                                            <span class="btn btn-success fileinput-button dz-clickable">
-                                                                <i class="fa fa-plus"></i>
-                                                                <span>Buscar Documento...</span>
-                                                            </span>
+                                                            
                                                 
                                                             <div class="btn-group pull-right">
                                                                 <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
-                                                                    <i class="fa fa-upload-cloud"></i> Publicar
+                                                                    <i class="fa fa-upload-cloud"></i> Descargar
                                                                 </button>
                                                                 <button id="dz-remove-btn" class="btn btn-danger cancel" type="reset" disabled="">
                                                                     <i class="demo-psi-trash"></i>
@@ -494,17 +515,7 @@
 
                                         </div> 
                                     
-                                    <div class="row">
-                                               
-                                                <div class="col-sm-12">
-                                                    <div class="panel-footer text-right">
-                                                             <button class="btn btn-success" type="submit">Guardar</button>
-                                                    </div>
-                                        
-                                                </div>
-                
-
-                                    </div>
+                                   
                                                 
                                     
                                    
@@ -1064,8 +1075,8 @@
                                             <li><a href="layouts-offcanvas-navigation.html">Ingresar Participantes</a></li>
                                             <li><a href="entrega_epp.html">Entrega de EPP</a></li>
                                             <li><a href="comite_paritario.html">Comité Paritario</a></li>
-                                            <li><a href="registro_accidente.html">Registro de Accidentes</a></li>
-                                            <li><a href="investigacion_accidente.html">Investigación de Accidentes</a></li>
+                                           <li><a href="lista_accidente.html">Registro de Accidentes</a></li>
+                                            <li><a href="lista_investigaciones.html">Investigación de Accidentes</a></li>
                                            
     
                                         </ul>
