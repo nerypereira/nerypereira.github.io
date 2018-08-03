@@ -40,10 +40,9 @@
 
     <!--Demo [ DEMONSTRATION ]-->
 
-   <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
+    <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
-  <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
-
+    <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
 
 
@@ -72,6 +71,9 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
+
+    <style type="text/css">
+    </style>
 
 </head>
 
@@ -166,12 +168,12 @@
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>Noticias</p>
                                         <p class="pad-top mar-top bord-top text-sm"> Se comunica que....
-                                            </p>
+                                        </p>
                                     </div>
                                     <div class="col-sm-4 col-md-3">
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                           
+
                                             <li>
                                                 <a href="#" class="media mar-btm">
                                                     <div class="media-left">
@@ -183,8 +185,8 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            
-                                            
+
+
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
@@ -219,6 +221,7 @@
 
 
 
+
                         <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
@@ -233,7 +236,7 @@
                                 <div class="nano scrollable">
                                     <div class="nano-content">
                                         <ul class="head-list">
-                                            
+
                                             <li>
                                                 <a class="media" href="#">
                                                     <div class="media-left">
@@ -349,6 +352,7 @@
                         <!--End user dropdown-->
 
 
+
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -374,7 +378,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Datos del Postulante</h1>
+                        <h1 class="page-header text-overflow">Listado de Ficha Personal</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -384,8 +388,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">PERSONAL</a></li>
-                        <li class="active">Postulante</li>
+                        <li><a href="#">Personal</a></li>
+                        <li class="active">Contratación</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -397,140 +401,120 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-12">
+
+                            <!-- Add Row -->
+                            <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Cambio de Estado del Proceso</h3>
+                                    <h3 class="panel-title">Trabajadores</h3>
                                 </div>
-                                
+
                                 <div class="panel-body">
-                                        <div class="row">
-                                                <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                                <label class="control-label">Cambio de Estado</label>
-                                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
-                                                                        <option value="">Seleccione...</option>
-                                                                        <option value="femenino">Iniciado</option>
-                                                                        <option value="masculino">Análisis Curricular</option>
-                                                                        <option value="masculino">Entrevista Técnica</option>
-                                                                        <option value="masculino">Entrevista Psicológica</option>
-                                                                        <option value="masculino">Finalizado</option>
-                                                                    </select>
-                                                            </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="panel-footer text-right">
-                                                            <a href="mant_seleccion.html"> <button class="btn btn-success" type="submit">Actualizar</button></a>
-                                                    </div>
-                                        
-                                                </div>
-                
-        
-                                        </div>
-                                        <div class="row">
-                                                <div class="col-sm-12">
-                                                    <label class="control-label">Observación</label>
-                                                    <textarea class="form-control" rows="5"></textarea>
-        
-                                                </div>
-        
-                                            </div>
-                                            <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="checkbox">
-                                                                    <input id="demo-form-checkbox-3" class="magic-checkbox" type="checkbox" checked>
-                                                                  <label for="demo-form-checkbox-3">Enviar Notificación</label>
-                                                       </div>
-                                                    </div>
-            
-                                                    <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Fecha Citación</label>
-                                                                <input type="date" class="form-control">
-                                                            </div>
-                                                        </div>
-            
-            
-                                                </div>
                                     <div class="row">
-                                            <div class="col-sm-12">
-                                            <div class="panel-heading">
-                                                    <h3 class="panel-title">Datos del Postulante</h3>
-                                            </div>
+
+                                        <div class="col-sm-10">
+
+                                            <div class="input-group mar-btm">
+                                                <input type="text" placeholder="Buscar por Trabajador, por Sector, etc" class="form-control">
+                                                <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Buscar</button>
+					                        </span>
                                             </div>
 
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Rut</label>
-                                                <input type="text" class="form-control" placeholder="12.967.879-1">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Carolina">
-                                            </div>
+
+
+
                                         </div>
 
+                                        <div class="col-sm-2">
+
+
+                                            <a href="crear_anexo.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
+
+
+                                        </div>
                                     </div>
+                                    <div class="row"></div>
 
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Paterno</label>
-                                                <input type="text" class="form-control" placeholder="Romero">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Materno</label>
-                                                <input type="text" class="form-control" placeholder="Carmona">
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Email</label>
-                                                <input type="text" class="form-control" placeholder="cromero@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Teléfono</label>
-                                                <input type="text" class="form-control" placeholder="992323456">
-                                            </div>
-                                        </div>
-
-                                    </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label class="control-label">Dirección</label>
-                                                <textarea class="form-control" rows="5" placeholder="Oficina Petronilla 243 casa 25, Condiminio San Marcos, Antofagasta"></textarea>
+                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th >Nombre</th>
+                                                        <th >Rut</th>  
+                                                        <th >Sector</th>  
+                                                        <th>Cargo</th>  
+                                                        <th >Tipo Ley</th>   
+                                                        <th >Tipo Contrato</th>                                                       
+                                                        <th class="min-desktop"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Juan Pérez</td>
+                                                        <td>10.234.456-8</td>
+                                                        <td>Educación</td>
+                                                        <td>Docente</td>
+                                                        <td>Estatuto Docente</td>
+                                                        <td>Plazo Fijo</td>
+                                                        <td style="text-align: center;">
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="ver_anexo.html"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                    
+                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
+                                                            </div>
+                                                        </td>
+                                                        <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
+                                                            DE R</td> -->
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Camila Correa</td>
+                                                        <td>12.986.986-4</td>
+                                                        <td>Educación</td>
+                                                        <td>Inspector General</td>
+                                                        <td>Código del trabajo</td>
+                                                        <td>Indefinido</td>
+                                                        <td style="text-align: center;">
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><i class="demo-psi-pen-5 icon-xs"></i></button>
+                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                    
+                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                   
 
-                                            </div>
+                                                   
+
+                                                   
+
+                                                </tbody>
+                                            </table>
+
                                         </div>
+
                                     </div>
 
-                                 
-                             
+
+
+                                </div>
                             </div>
+
                         </div>
 
 
 
-                  
 
                     </div>
-                    
-                           
-                    
-                   
+
                 </div>
+
+
+
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -538,7 +522,7 @@
 
 
             </div>
-            
+
 
         </div>
         <!--===================================================-->
@@ -581,7 +565,7 @@
                         <!--================================-->
                         <div class="tab-content">
 
-                           <!--First tab (Contact list)-->
+                            <!--First tab (Contact list)-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <div class="tab-pane fade in active" id="demo-asd-tab-1">
                                 <p class="pad-all text-main text-sm text-uppercase text-bold">
@@ -602,7 +586,7 @@
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">                                            
+                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">
                                             <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
                                         </div>
                                         <div class="media-body">
@@ -674,13 +658,12 @@
                                 </div>
 
 
-                               
+
 
 
                             </div>
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End first tab (Contact list)-->
-
 
 
                             <!--Second tab (Custom layout)-->
@@ -823,7 +806,6 @@
         <!--===================================================-->
         <!--END ASIDE-->
 
-
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
         <nav id="mainnav-container">
@@ -928,7 +910,7 @@
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
-                                            <i class="demo-pli-split-vertical-2"></i>
+                                        <i class="demo-pli-split-vertical-2"></i>
                                          <span class="menu-title">Reclutamiento</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -957,28 +939,12 @@
 
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                             <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
+                                        <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
                                          <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
                                          <li><a href="lista_trab_anexos.html">Ingreso Anexo Contrato</a></li>
 
                                     </ul>
                                 </li>
-                                 <!--Menu list item-->
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-split-vertical-2"></i>
-                                            <span class="menu-title">Licencias/Orden Reposo</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="licencia_medica.html">Registrar Licencias</a></li>
-                                            <li><a href="orden_reposo.html">Ver Orden de Reposo</a></li>
-    
-    
-                                        </ul>
-                                    </li>
                                 <!--Menu list item-->
                                 <li>
                                         <a href="#">
@@ -1010,7 +976,6 @@
                                             
                                         </ul>
                                     </li> 
-                                    
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1024,7 +989,8 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>         
+                                    </li>          
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1119,7 +1085,6 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
-
                                     <ul class="collapse">
                                             <li><a href="#">Ingreso Haberes</a></li>
                                             <li><a href="#">Ingresos Descuentos</a></li>
@@ -1178,35 +1143,36 @@
                                            
                                         </ul>
                                     </li>
-                                
+
                                 <li class="list-divider"></li>
 
-                                  <!--Category name-->
-                                  <li class="list-header">MANTENEDORES</li>
 
-                               <!--Menu list item-->
-                               <li>
+                                <!--Category name-->
+                                <li class="list-header">MANTENEDORES</li>
+
+                                <!--Menu list item-->
+                                <li>
                                     <a href="#">
                                         <i class="demo-pli-computer-secure"></i>
                                         <span class="menu-title">INTERNOS</span>
                                         <i class="arrow"></i>
-                                    </a>  
-                                     <!--Submenu-->
+                                    </a>
+                                    <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
 
 
-                                    </ul> 
+                                    </ul>
                                     <ul class="collapse">
-                                            <li><a href="lista_sector.html">Sector</a></li>
-    
-    
-                                    </ul> 
+                                        <li><a href="lista_sector.html">Sector</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
-                                           <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-    
-    
-                                    </ul> 
+                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
@@ -1222,13 +1188,13 @@
     
     
                                     </ul> 
-                                   
-                             </li>
-                            
 
-                           
+                                </li>
 
-                            <li class="list-divider"></li>
+
+
+
+                                <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
@@ -1246,11 +1212,12 @@
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
                                         <li><a href="solicitar_permiso.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                       
+                                        
 
 
                                     </ul>
                                 </li>
+
                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-computer-secure"></i>
@@ -1280,12 +1247,11 @@
                                             <li><a href="inf_aguinaldo.html">Aguinaldo</a></li>
                                             <li><a href="inf_escolar.html">Escolaridad</a></li>
                                             <li><a href="inf_salud.html">Salud</a></li>
-
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
+                              <!--Menu list item-->
+                              <li>
                                     <a href="#">
                                         <i class="demo-pli-mail"></i>
                                         <span class="menu-title">Comunicados</span>
@@ -1300,6 +1266,7 @@
 
                                     </ul>
                                 </li>
+
 
 
 
