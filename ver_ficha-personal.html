@@ -40,9 +40,10 @@
 
     <!--Demo [ DEMONSTRATION ]-->
 
-    <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
+   <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
-    <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+  <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+
 
 
 
@@ -71,9 +72,6 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
-
-    <style type="text/css">
-    </style>
 
 </head>
 
@@ -168,12 +166,12 @@
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>Noticias</p>
                                         <p class="pad-top mar-top bord-top text-sm"> Se comunica que....
-                                        </p>
+                                            </p>
                                     </div>
                                     <div class="col-sm-4 col-md-3">
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-
+                                           
                                             <li>
                                                 <a href="#" class="media mar-btm">
                                                     <div class="media-left">
@@ -185,8 +183,8 @@
                                                     </div>
                                                 </a>
                                             </li>
-
-
+                                            
+                                            
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
@@ -221,7 +219,6 @@
 
 
 
-
                         <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
@@ -236,7 +233,7 @@
                                 <div class="nano scrollable">
                                     <div class="nano-content">
                                         <ul class="head-list">
-
+                                            
                                             <li>
                                                 <a class="media" href="#">
                                                     <div class="media-left">
@@ -352,7 +349,6 @@
                         <!--End user dropdown-->
 
 
-
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -378,7 +374,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Listado de Ficha Personal</h1>
+                        <h1 class="page-header text-overflow">Ficha Personal</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -388,8 +384,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li class="active">Contratación</li>
+                        <li><a href="#">PERSONAL</a></li>
+                        <li class="active">Ficha Personal</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -401,120 +397,653 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
-                        <div class="col-sm-12">
-
-                            <!-- Add Row -->
-                            <!--===================================================-->
+                        <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Trabajadores</h3>
+                                    <h3 class="panel-title">Antecedentes Personales</h3>
                                 </div>
-
                                 <div class="panel-body">
                                     <div class="row">
+                                        <div class="col-sm-8">
 
-                                        <div class="col-sm-10">
-
-                                            <div class="input-group mar-btm">
-                                                <input type="text" placeholder="Buscar por Trabajador, por Sector, etc" class="form-control">
-                                                <span class="input-group-btn">
-					                            <button class="btn btn-mint" type="button">Buscar</button>
-					                        </span>
-                                            </div>
-
-
-
-
+                                                
                                         </div>
-
-                                        <div class="col-sm-2">
-
-
-                                            <a href="ficha-personal.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
-
-
+                                        <div class="col-sm-1">
+                                                <a href="lista_trabajadores.html"> <button class="btn btn-success"  type="submit">Actualizar</button></a>
                                         </div>
                                     </div>
-                                    <div class="row"></div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Rut</label>
+                                                <input type="text" class="form-control"  placeholder="10.234.456-8">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre</label>
+                                                <input type="text" class="form-control"  placeholder="Juan">
+                                            </div>
+                                        </div>
+
+                                    </div>
 
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
-                                                <thead>
-                                                    <tr>
-                                                        <th >Nombre</th>
-                                                        <th >Rut</th>  
-                                                        <th >Sector</th>  
-                                                        <th>Cargo</th>  
-                                                        <th >Tipo Ley</th>   
-                                                        <th >Tipo Contrato</th>                                                       
-                                                        <th class="min-desktop"></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Juan Pérez</td>
-                                                        <td>10.234.456-8</td>
-                                                        <td>Educación</td>
-                                                        <td>Docente</td>
-                                                        <td>Estatuto Docente</td>
-                                                        <td>Plazo Fijo</td>
-                                                        <td style="text-align: center;">
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="ver_ficha-personal.html"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
-                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
-                    
-                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
-                                                            </div>
-                                                        </td>
-                                                        <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
-                                                            DE R</td> -->
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Camila Correa</td>
-                                                        <td>12.986.986-4</td>
-                                                        <td>Educación</td>
-                                                        <td>Inspector General</td>
-                                                        <td>Código del trabajo</td>
-                                                        <td>Indefinido</td>
-                                                        <td style="text-align: center;">
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-primary btn-xs btn-icon btn-circle"><i class="demo-psi-pen-5 icon-xs"></i></button>
-                                                                <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
-                    
-                                                                <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                   
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido Paterno</label>
+                                                <input type="text" class="form-control"  placeholder="Pérez">
+                                            </div>
+                                        </div>
 
-                                                   
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido Materno</label>
+                                                <input type="text" class="form-control"  placeholder="Castro">
+                                            </div>
+                                        </div>
 
-                                                   
 
-                                                </tbody>
-                                            </table>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Profesión o Actividad</label>
+                                                            <input type="text" class="form-control"  placeholder="Profesor Básica">
+                                                        </div>
 
+                                            </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="text" class="form-control"  placeholder="jperez@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Teléfono</label>
+                                                <input type="text" class="form-control"  placeholder="22343234">
+                                            </div>
                                         </div>
 
                                     </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Dirección</label>
+                                                <textarea class="form-control" rows="5"  placeholder="Av. Brasil 1234, Antofagasta"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Fecha Nacimiento</label>
+                                                <input type="date" class="form-control"  placeholder="03/07/1980">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Nacionalidad</label>
+                                                <input type="text" class="form-control" placeholder="Chileno">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Sexo</label>
+                                                <input type="text" class="form-control" placeholder="Masculino">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Estado Civil</label>
+                                                <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                        <option value="United States">Seleccione...</option>
+                                                        <option value="United States">Soltero(a)</option>
+                                                        <option value="United Kingdom">Casado(a)</option>
+                                                        <option value="United Kingdom">Divorciado(a)</option>
+                                                        <option value="United Kingdom">Viudo(a)</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div>
+                                        
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="licencia-conducir">Licencia de Conducir</label>
+                                            <select class="form-control" data-placeholder="Seleccione..." id="licencia-conducir" tabindex="2">
+                                                     
+                                                    <option value="United States">Sin licencia</option>
+                                                    <option value="United States">Clase B</option>
+                                                    <option value="United Kingdom">Clase C</option> 
+                                                    <option value="United Kingdom">Clase A1</option> 
+                                                    <option value="United Kingdom">Clase A2</option>
+                                                    <option value="United Kingdom">Clase A3</option>  
+                                                    <option value="United Kingdom">Clase A4</option>
+                                                    <option value="United Kingdom">Clase A5</option>
+                                                    <option value="United Kingdom">Clase D</option>  
+                                                    <option value="United Kingdom">Clase E</option>  
+                                                    <option value="United Kingdom">Clase F</option>
+                                                </select>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Cantidad de Hijos</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">                                      
+                                            <div class="panel">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Antecedentes de Emergencia</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Nombre del Contacto</label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">Parentesco</label>
+                                                                            <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                                                    <option value="">Seleccione...</option>
+                                                                                    <option value="">Conyuge</option>
+                                                                                    <option value="">Hijo(a)</option>
+                                                                                    <option value="">Madre</option>
+                                                                                    <option value="">Padre</option>
+                                                                                    <option value="">Sin Parentezco</option>
+                                                                                </select>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">Teléfono del Contacto</label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                </div>
+
+                                                            </div>
+                                                    </div>
+                                        
 
 
 
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
 
 
 
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Antecedentes Previsionales</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sistema Previsional</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                        <option value="United Kingdom">Habitat</option>
+                                                        <option value="United Kingdom">INP</option>
+                                                        <option value="United States">Cuprum</option>
+                                                        <option value="United Kingdom">Provida</option>
+                                                        <option value="United Kingdom">Capital</option>
+                                                        <option value="United Kingdom">Modelo</option>                                                     
+                                                        <option value="United Kingdom">Planvital</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row">
+
+                                                <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Fecha Afilicación</label>
+                                                            <input type="text" class="form-control" placeholder="24/02/2011">
+                                                        </div>
+                                                    </div>
+                                            
+                                        </div>                                      
+
+                                        <div class="row">
+                                                <div class="col-sm-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Monto Ahorro Previsional Voluntario</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>    
+        
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Salud</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                       
+                                                        <option value="United States">Fonasa</option>
+                                                        <option value="United Kingdom">Mas Vida</option>
+                                                        <option value="United Kingdom">Banmédica</option>
+                                                        <option value="United Kingdom">Colmena</option>
+                                                        <option value="United Kingdom">Consalud</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Con Subsidio de Licencias Médicas</label>
+                                                        <select class="form-control" data-placeholder="Seleccione...">
+                                                        <option value="United States">SI</option>                                                      
+                                                        <option value="United Kingdom">NO</option>                                                        
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Sistema de Pago</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sistema de Pago</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                       
+                                                        <option value="">Cta. Bancaria</option>
+                                                        <option value="">Servipag</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Tipo de Cuenta</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                        
+                                                        <option value="">Cta. Corriente</option>
+                                                        <option value="">Cta. Rut</option>
+                                                        <option value="">Cta. Vista</option>
+                                                        <option value="">Cta. Ahorro</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Banco</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                        <option value="">Banco Chile</option>
+                                                        <option value="">Banco Estado</option>                                                       
+                                                        <option value="">Banco BCI</option>
+                                                        <option value="">Banco Itau</option>
+                                                        <option value="">Banco BBVA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Número de Cuenta</label>
+                                                    <input type="text" class="form-control" placeholder="34658392002">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Fecha de Cambio</label>
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                           
+    
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                          
+                           
+                        </div>
 
                     </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="panel">
+                               <div class="panel-heading">
+                                   <h3 class="panel-title">Antecedentes Contractuales</h3>
+                               </div>
+                                <div class="panel-body">
+                                        <div class="row">
+                                                <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                                <label class="control-label">Rut Jefe Directo</label>
+                                                                <input type="text" class="form-control" placeholder="8.789.567-1">
+                                                            </div>
+                                                </div>   
+                                                <div class="col-sm-8">
+                                                        <div class="form-group">
+                                                                <label class="control-label">Nombre Jefe Directo</label>
+                                                                <input type="text" class="form-control" placeholder="Romina Seballos">
+                                                            </div>
+                                                </div>   
 
+                                        </div>
+                                    <div class="row">
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Sindicalizado</label>
+                                                            <select class="form-control" data-placeholder="Seleccione...">
+                                                           
+                                                            <option value="United Kingdom">SI</option>
+                                                            <option value="United Kingdom">NO</option>                                                        
+                                                           
+                                                        </select>
+                                                        </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Con convenio</label>
+                                                            <select class="form-control" data-placeholder="Seleccione...">
+                                                           
+                                                            <option value="United Kingdom">SI</option>
+                                                            <option value="United Kingdom">NO</option>                                                        
+                                                           
+                                                        </select>
+                                                        </div>
+                                            </div>
+
+                                    </div> 
+
+
+
+                                   <div class="row">
+                                       <div class="col-sm-12">
+                                           <div class="form-group">
+                                               <label class="control-label">Sector</label>
+                                               <select class="form-control" data-placeholder="Seleccione..." id="sector" onchange="ocultaTipoLey();">
+                                                <option value="val2">Educacional</option>
+                                               <option value="val1">Salud</option>
+                                              
+                                               <option value="val3">Casa Central</option>
+                                              
+                                           </select>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <script>
+                                    function ocultaTipoLey(){
+
+                                         if(document.getElementById('sector').value == "val1"){
+                                                //Datos para mostrar
+                                                document.getElementById('salud').style.display='';  
+                                                document.getElementById('categoria').style.display=''; 
+                                                document.getElementById('nivel').style.display='';
+
+                                                //Datos para ocultar 
+                                                document.getElementById('educacion').style.display='none';
+                                                document.getElementById('casaCentral').style.display='none';
+
+                                          }
+                                          if(document.getElementById('sector').value == "val2"){
+                                                //Datos para mostrar
+                                                document.getElementById('educacion').style.display='';       
+                                                //Datos para ocultar 
+                                                document.getElementById('salud').style.display='none';
+                                                document.getElementById('casaCentral').style.display='none';
+                                                document.getElementById('categoria').style.display='none'; 
+                                                document.getElementById('nivel').style.display='none';
+
+                                          }
+                                          if(document.getElementById('sector').value == "val3"){
+                                                //Datos para mostrar
+                                                document.getElementById('casaCentral').style.display='';       
+                                                //Datos para ocultar 
+                                                document.getElementById('educacion').style.display='none';
+                                                document.getElementById('salud').style.display='none';
+                                                document.getElementById('categoria').style.display='none'; 
+                                                document.getElementById('nivel').style.display='none';
+
+                                          }
+
+
+                                    }
+                                   
+                                   </script>
+                                  
+
+                                  
+                                   <div class="row" id="salud" style="display: none;">
+                                       <div class="col-sm-12">
+                                           <div class="form-group">
+                                               <label class="control-label">Tipo Ley</label>
+                                               <select class="form-control" data-placeholder="Seleccione...">
+                                               <option value="United States">Seleccione...</option>
+                                               <option value="United States">19.378 (ESTATUTO DE ATENCIÓN PRIMARIA)</option>
+                                               <option value="United Kingdom">CODIGO DEL TRABAJO</option>                                             
+                                           </select>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row" id="educacion" style="display: none;">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Tipo Ley</label>
+                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                <option value="United States">Seleccione...</option>                                      
+                                                <option value="United Kingdom">19.070 (ESTATUTO DOCENTE)</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO CON CONVENIO</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO 19.464 SINDICALIZADO SIN CONVENIO</option>
+                                                <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="casaCentral" style="display: none;">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Tipo Ley</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                    <option value="United States">Seleccione...</option>                                                   
+                                                    <option value="United Kingdom">CODIGO DEL TRABAJO</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   <div class="row">
+                                       <div class="col-sm-12">
+                                           <div class="form-group">
+                                               <label class="control-label">Tipo Contrato</label>
+                                               <select class="form-control" data-placeholder="Seleccione...">
+                                                    
+                                                    <option value="United States">PLAZO FIJO</option>
+                                                    <option value="United Kingdom">REEMPLAZO</option>
+                                                    <option value="United Kingdom">HONORARIO</option>
+                                                    <option value="United Kingdom">PLAZO INDEFINIDO</option>
+                                                </select>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row" >
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Cargo</label>
+                                                <select class="form-control" data-placeholder="Seleccione...">
+                                                    <option value="United Kingdom">Docente Enseñanza Básica</option>      
+                                                <option value="United States">Inspector General</option>
+                                                <option value="United Kingdom">Docente Enseñanza Media</option>   
+                                                                                      
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Función Laboral</label>
+                                                    <select class="form-control" data-placeholder="Seleccione...">
+                                                    <option value="United States">Profesor con Jefatura</option>
+                                                    <option value="United States">Función de....</option>
+                                                    <option value="United Kingdom">Función de ...</option>                                             
+                                                </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                   <div class="row" id="categoria" style="display: none;">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Categoría</label>
+                                            <select class="form-control" data-placeholder="Seleccione...">
+                                            <option value="United States">Seleccione...</option>
+                                            <option value="United States">A</option>
+                                            <option value="United Kingdom">B</option>
+                                            <option value="United Kingdom">C</option>
+                                            <option value="United Kingdom">D</option>
+                                            <option value="United Kingdom">E</option>
+                                            <option value="United Kingdom">F</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                   <div class="row" id="nivel" style="display: none;">
+                                       <div class="col-sm-12">
+                                           <div class="form-group">
+                                               <label class="control-label">Nivel</label>
+                                               <select class="form-control" data-placeholder="Seleccione...">
+                                               <option value="United States">Seleccione...</option>
+                                               <option value="United States">1</option>
+                                               <option value="United Kingdom">2</option>
+                                               <option value="United Kingdom">3</option>
+                                               <option value="United Kingdom">4</option>
+                                           </select>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row" >
+                                        <div class="col-sm-6">
+                                                     
+                                                <label class="control-label">Jornada Laboral</label>
+                                            <input type="text" class="form-control" placeholder="45 hrs. semanales">                                  
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sueldo Bruto</label>
+                                                    <input type="text" class="form-control" placeholder="$1.200.000">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                         
+                                                    <div class="form-group">
+                                                            <label class="control-label">Fecha Inicio</label>
+                                                            <input type="text" class="form-control" placeholder="02/02/2018">
+                                                        </div>                                
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Fecha Término</label>
+                                                        <input type="text" class="form-control" placeholder="02/02/2019" >
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="row" >
+                                                <div class="col-sm-6">
+                                                             
+                                                        <div class="form-group">
+                                                                <button class="btn btn-mint" type="button">Generar Contrato</button>
+                                                            
+                                                               
+                                                            </div>                                
+                                                </div>
+                                               
+                                            </div>
+                                               
+
+                               </div>
+                           </div>
+
+                       </div>
+                      <div class="col-sm-4">
+                            <div class="panel">
+                                    <div class="panel-heading">
+                                            <h3 class="panel-title">Documentación Adjunta</h3>
+                                        </div>
+                                     <div class="panel-body">
+
+                                            <div class="row">
+                                                <div class="=col-sm-12">
+                                                    <h5>Contrato_Firmado02022018.pdf </h5>
+                                                </div>
+                                            </div>
+
+                                        <div class="row">
+                                            <div class="=col-sm-12">
+                                                    <div class="bord-top pad-ver">
+                                                            <!-- The fileinput-button span is used to style the file input field as button -->
+                                                            <span class="btn btn-success fileinput-button dz-clickable">
+                                                                <i class="fa fa-plus"></i>
+                                                                <span>Seleccione Archivo...</span>
+                                                            </span>
+                                                
+                                                            <div class="btn-group pull-right">
+                                                                <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
+                                                                    <i class="fa fa-upload-cloud"></i> Descargar
+                                                                </button>
+                                                                <button id="dz-remove-btn" class="btn btn-danger cancel" type="reset" disabled="">
+                                                                    <i class="demo-psi-trash"></i>
+                                                                </button>
+                                                            </div>
+                                                    </div>
+                                            </div>
+
+                                        </div>    
+                                    </div>    
+                            </div>
+                      </div>
+                    </div>
                 </div>
-
-
-
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -522,7 +1051,7 @@
 
 
             </div>
-
+            
 
         </div>
         <!--===================================================-->
@@ -565,7 +1094,7 @@
                         <!--================================-->
                         <div class="tab-content">
 
-                            <!--First tab (Contact list)-->
+                           <!--First tab (Contact list)-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <div class="tab-pane fade in active" id="demo-asd-tab-1">
                                 <p class="pad-all text-main text-sm text-uppercase text-bold">
@@ -586,7 +1115,7 @@
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">
+                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">                                            
                                             <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
                                         </div>
                                         <div class="media-body">
@@ -658,12 +1187,13 @@
                                 </div>
 
 
-
+                               
 
 
                             </div>
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End first tab (Contact list)-->
+
 
 
                             <!--Second tab (Custom layout)-->
@@ -806,6 +1336,7 @@
         <!--===================================================-->
         <!--END ASIDE-->
 
+
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
         <nav id="mainnav-container">
@@ -910,7 +1441,7 @@
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
-                                        <i class="demo-pli-split-vertical-2"></i>
+                                            <i class="demo-pli-split-vertical-2"></i>
                                          <span class="menu-title">Reclutamiento</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -945,8 +1476,8 @@
 
                                     </ul>
                                 </li>
-                                <!--Menu list item-->
-                                <li>
+                                 <!--Menu list item-->
+                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Licencias/Orden Reposo</span>
@@ -961,7 +1492,6 @@
     
                                         </ul>
                                     </li>
-
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -975,22 +1505,21 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li> 
-                                 <!--Menu list item-->
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-split-vertical-2"></i>
-                                            <span class="menu-title">Vacaciones</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
-                                            
-                                        </ul>
-                                    </li>          
+                                    </li>   
+                                    <!--Menu list item-->
+                                    <li>
+                                            <a href="#">
+                                                <i class="demo-pli-split-vertical-2"></i>
+                                                <span class="menu-title">Vacaciones</span>
+                                                <i class="arrow"></i>
+                                            </a>
 
+                                            <!--Submenu-->
+                                            <ul class="collapse">
+                                                <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
+                                                
+                                            </ul>
+                                        </li>     
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1015,8 +1544,8 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                  <!--Submenu-->
-                                  <ul class="collapse">                                        
+                                   <!--Submenu-->
+                                   <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
                                        
                                         
@@ -1085,6 +1614,7 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
+
                                     <ul class="collapse">
                                             <li><a href="#">Ingreso Haberes</a></li>
                                             <li><a href="#">Ingresos Descuentos</a></li>
@@ -1143,36 +1673,35 @@
                                            
                                         </ul>
                                     </li>
-
+                                
                                 <li class="list-divider"></li>
 
+                                  <!--Category name-->
+                                  <li class="list-header">MANTENEDORES</li>
 
-                                <!--Category name-->
-                                <li class="list-header">MANTENEDORES</li>
-
-                                <!--Menu list item-->
-                                <li>
+                               <!--Menu list item-->
+                               <li>
                                     <a href="#">
                                         <i class="demo-pli-computer-secure"></i>
                                         <span class="menu-title">INTERNOS</span>
                                         <i class="arrow"></i>
-                                    </a>
-                                    <!--Submenu-->
+                                    </a>  
+                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
 
 
-                                    </ul>
+                                    </ul> 
                                     <ul class="collapse">
-                                        <li><a href="lista_sector.html">Sector</a></li>
-
-
-                                    </ul>
+                                            <li><a href="lista_sector.html">Sector</a></li>
+    
+    
+                                    </ul> 
                                     <ul class="collapse">
-                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-
-
-                                    </ul>
+                                            <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+    
+    
+                                    </ul> 
                                     <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
@@ -1188,13 +1717,13 @@
     
     
                                     </ul> 
+                                   
+                             </li>
+                            
 
-                                </li>
+                           
 
-
-
-
-                                <li class="list-divider"></li>
+                            <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
@@ -1212,12 +1741,11 @@
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
                                         <li><a href="solicitar_permiso.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                        
+                                       
 
 
                                     </ul>
                                 </li>
-
                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-computer-secure"></i>
@@ -1247,25 +1775,26 @@
                                             <li><a href="inf_aguinaldo.html">Aguinaldo</a></li>
                                             <li><a href="inf_escolar.html">Escolaridad</a></li>
                                             <li><a href="inf_salud.html">Salud</a></li>
-                                    </ul>
-                                </li>
-
-                              <!--Menu list item-->
-                              <li>
-                                    <a href="#">
-                                        <i class="demo-pli-mail"></i>
-                                        <span class="menu-title">Comunicados</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
-                                       
-
 
                                     </ul>
                                 </li>
+
+                                <!--Menu list item-->
+                                <li>
+                                        <a href="#">
+                                            <i class="demo-pli-mail"></i>
+                                            <span class="menu-title">Comunicados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                           
+    
+    
+                                        </ul>
+                                    </li>
 
 
 
