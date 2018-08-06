@@ -375,7 +375,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Función</h1>
+                        <h1 class="page-header text-overflow">Descuento</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -387,7 +387,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Mantenedor</li>
+                        <li class="active">Remuneraciones</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -402,46 +402,132 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Función Laboral</h3>
+                                    <h3 class="panel-title">Mantenedor de Descuentos</h3>
                                 </div>
                                 <div class="panel-body">
+
+                                        <div class="row">
+                                                <div class="col-md-4">
+                                                        <div class="form-group">
+                                                                <label class="control-label">Tipo Descuento</label>
+                                                                <select class="form-control" data-placeholder="Seleccione..." id="selec" onchange="individual();">
+                                                                            
+                                                                <option value="val1">Masivo</option>
+                                                                <option value="val2">individual</option>     
+                                                                                                             
+                                                               
+                                                            </select>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                            <label class="control-label">Frecuencia</label>
+                                                            <select class="form-control" data-placehold  <option value="">seleccione...</option>                 
+                                                            <option value="val1">Única Vez</option>
+                                                            <option value="val2">Mensual</option>     
+                                                                                                         
+                                                           
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                           <div class="panel-footer text-right">
+                                                                   <a href="lista_descuentos.html"><button class="btn btn-success" type="submit">Actualizar</button></a>
+                                                               </div>
+                                   
+                                                    </div>
+           
+                                               
+                                            </div>
+                                           
+                                           
+                                            <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Estado</label>
+                                                            <select class="form-control" data-placeholder="Seleccione..." >
+                                                            
+                                                            <option value="vigente">Vigente</option>
+                                                            <option value="cerrado">Cerrado</option>
+                                                           
+                                                           
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Fecha de Aplicación</label>
+                                                                <input type="text" class="form-control" placeholder="01/07/2018">
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Fecha de Término</label>
+                                                                <input type="text" class="form-control" placeholder="01/07/2018">
+                                                            </div>
+                                                    </div>
+
+                                            </div>
+                                         
+                                                 
+                                      
 
                                     <div class="row">
                                             <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Código de la Función</label>
-                                                        <input type="text" class="form-control">
+                                                        <label class="control-label">Código del Descuento</label>
+                                                        <input type="text" class="form-control" placeholder="1001">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <label class="control-label">Nombre de la Función</label>
+                                                        <label class="control-label">Descripción del Descuento</label>
+                                                        <input type="text" class="form-control" placeholder="Cuota Beneficio">
+                                                    </div>
+                                                </div>
+
+                                                                            
+                                                
+                                    </div>
+                                    <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sector</label>
+                                                    <select class="form-control" data-placeholder="Seleccione..." >
+                                                            
+                                                            <option value="United">Educación</option>
+                                                            <option value="United">Salud</option>
+                                                            <option value="United">Casa Central</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Monto</label>
+                                                        <input type="text" class="form-control" placeholder="10.000">
+                                                    </div>
+                                                </div>
+                                          
+                                    </div>   
+                                    <div class="row" id="persona" style="display: none;">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Rut</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Nombre Completo</label>
                                                         <input type="text" class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Descripción</label>
-                                                                <textarea class="form-control" rows="5"></textarea>
-                
-                                                            </div>
+                                                <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Monto</label>
+                                                            <input type="text" class="form-control">
                                                         </div>
                                                     </div>
-                                                <div class="row">
-                                                        
-                                                    <div class="col-sm-6"></div>
-                                                         <div class="col-sm-6">
-                                                                <div class="panel-footer text-right">
-                                                                        <a href="lista_funcion.html"><button class="btn btn-success" type="submit">Guardar</button></a>
-                                                                    </div>
-                                        
-                                                         </div>
-                
-
-                                                </div>
-                                                
-                                    </div>
+                                    </div>  
+                                   
                                    
                                                         
                                   
@@ -1029,17 +1115,18 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
+
                                     <ul class="collapse">
                                             <li><a href="lista_trab_Liqui.html">Ver Liquidaciones</a></li>
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
                                           
-                                          
+                                           
     
                                         </ul>
                                     </li>
     
-                                   
+                                  
     
                                     <!--Menu list item-->
                                     <li>
@@ -1074,7 +1161,6 @@
                                            
                                         </ul>
                                     </li>
-
                                 <li class="list-divider"></li>
 
                            

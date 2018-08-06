@@ -42,7 +42,7 @@
 
     <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
-  <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+    <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
 
 
@@ -71,6 +71,9 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
+
+    <style type="text/css">
+    </style>
 
 </head>
 
@@ -165,12 +168,12 @@
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>Noticias</p>
                                         <p class="pad-top mar-top bord-top text-sm"> Se comunica que....
-                                            </p>
+                                        </p>
                                     </div>
                                     <div class="col-sm-4 col-md-3">
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                           
+
                                             <li>
                                                 <a href="#" class="media mar-btm">
                                                     <div class="media-left">
@@ -182,8 +185,8 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            
-                                            
+
+
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
@@ -219,7 +222,7 @@
 
 
 
-                       <!--Notification dropdown-->
+                        <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -233,7 +236,7 @@
                                 <div class="nano scrollable">
                                     <div class="nano-content">
                                         <ul class="head-list">
-                                            
+
                                             <li>
                                                 <a class="media" href="#">
                                                     <div class="media-left">
@@ -375,19 +378,18 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Función</h1>
+                        <h1 class="page-header text-overflow">Descuentos</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-
-
+                    
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Mantenedor</li>
+                        <li class="active">Remuneraciones</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -399,68 +401,101 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-12">
+
+                            <!-- Add Row -->
+                            <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Función Laboral</h3>
+                                    <h3 class="panel-title">Selección de Descuentos</h3>
                                 </div>
+
                                 <div class="panel-body">
+                                    <div class="row">
+
+                                        <div class="col-sm-10">
+
+                                            <div class="input-group mar-btm">
+                                                <input type="text" placeholder="Buscar por Rut,  Sector, Fecha, etc" class="form-control">
+                                                <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Buscar</button>
+					                        </span>
+                                            </div>
+
+                                         </div>
+                                         <div class="col-sm-2">
+                                                <a href="mant_descuentos.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
+              
+                                             </div>
+
+                                       
+                                    </div>
+                                    <div class="row"></div>
+
+                                   
 
                                     <div class="row">
-                                            <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Código de la Función</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Nombre de la Función</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Descripción</label>
-                                                                <textarea class="form-control" rows="5"></textarea>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                <div class="row">
-                                                        
-                                                    <div class="col-sm-6"></div>
-                                                         <div class="col-sm-6">
-                                                                <div class="panel-footer text-right">
-                                                                        <a href="lista_funcion.html"><button class="btn btn-success" type="submit">Guardar</button></a>
-                                                                    </div>
-                                        
-                                                         </div>
-                
+                                        <div class="col-sm-12">
+                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="min-tablet">Descripción Descuento</th>
+                                                        <th class="min-tablet">Monto</th>
+                                                        <th class="min-tablet">Fecha de Aplicación</th></th>
+                                                        <th class="min-tablet">Fecha de Término</th></th>
+                                                        <th class="min-desktop">Estado</th>
+                                                        <th class="min-desktop"></th>
+                                                                                                           
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                                                            
+                                                        <td>Cuota Beneficio</td>
+                                                        <td>10.000</td>
+                                                        <td>01/07/2017</td>
+                                                        <td>01/07/2017</td>
+                                                        <td>Vigente</td>
+                                                        <td style="text-align: center;">
+                                                                <div class="btn-group">
+                                                                    <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="ver_mant_descuentos.html"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                    <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                        
+                                                                    <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
+                                                                </div>
+                                                            </td>                                       
+                                                       
+                                                      
+                                                    </tr>
+                                    
+                                                   
+                                                  
 
-                                                </div>
-                                                
+
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
                                     </div>
-                                   
-                                                        
-                                  
 
-                                                
-                                   
-                             
+
 
                                 </div>
                             </div>
+
                         </div>
 
-                       
-                      
+
+
 
                     </div>
-                   
+
                 </div>
-               
+
+
+
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -468,7 +503,7 @@
 
 
             </div>
-            
+
 
         </div>
         <!--===================================================-->
@@ -532,7 +567,7 @@
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">                                            
+                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">
                                             <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
                                         </div>
                                         <div class="media-body">
@@ -604,7 +639,7 @@
                                 </div>
 
 
-                               
+
 
 
                             </div>
@@ -855,19 +890,19 @@
 
                                 <!--Menu list item-->
                                 <li>
-                                        <a href="#">
-                                                <i class="demo-pli-split-vertical-2"></i>
-                                             <span class="menu-title">Reclutamiento</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
+                                    <a href="#">
+                                        <i class="demo-pli-split-vertical-2"></i>
+                                         <span class="menu-title">Reclutamiento</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
 
 
                                     <!--Submenu-->
 
                                     <ul class="collapse">
                                         <li><a href="mant_seleccion.html">Publicar</a></li>
-                                      <!--  <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
+                                       <!-- <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
                                          <li><a href="buscar_postulantes.html">Buscar Postulantes</a></li>
 
                                     </ul>
@@ -885,14 +920,14 @@
 
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
-                                         <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
+                                             <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
+                                        <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
                                          <li><a href="lista_trab_anexos.html">Ingreso Anexo Contrato</a></li>
 
                                     </ul>
                                 </li>
-                                <!--Menu list item-->
-                                <li>
+                                 <!--Menu list item-->
+                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Licencias/Orden Reposo</span>
@@ -920,7 +955,8 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>  
+                                    </li>   
+
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -934,8 +970,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>          
-
+                                    </li>         
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1022,6 +1057,7 @@
                                 <li class="list-header">Remuneraciones</li>
 
                                
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1029,6 +1065,7 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
+
                                     <ul class="collapse">
                                             <li><a href="lista_trab_Liqui.html">Ver Liquidaciones</a></li>
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
@@ -1077,34 +1114,34 @@
 
                                 <li class="list-divider"></li>
 
-                           
-                                 <!--Category name-->
-                                 <li class="list-header">MANTENEDORES</li>
-                                  
-                                 <!--Menu list item-->
-                                 <li>
-                                      <a href="#">
-                                          <i class="demo-pli-computer-secure"></i>
-                                          <span class="menu-title">INTERNOS</span>
-                                          <i class="arrow"></i>
-                                      </a>  
-                                       <!--Submenu-->
-                                      <ul class="collapse">
-                                          <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
-  
-  
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_sector.html">Sector</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
+
+                                <!--Category name-->
+                                <li class="list-header">MANTENEDORES</li>
+
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="#">
+                                        <i class="demo-pli-computer-secure"></i>
+                                        <span class="menu-title">INTERNOS</span>
+                                        <i class="arrow"></i>
+                                    </a>
+                                    <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
+
+
+                                    </ul>
+                                    <ul class="collapse">
+                                        <li><a href="lista_sector.html">Sector</a></li>
+
+
+                                    </ul>
+                                    <ul class="collapse">
+                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+
+
+                                    </ul>
+                                    <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
     
@@ -1114,15 +1151,16 @@
     
     
                                     </ul> 
-                                      <ul class="collapse">
+                                    <ul class="collapse">
                                             <li><a href="lista_centro_costo.html">Centro de Costo</a></li>
     
     
                                     </ul> 
-  
-                                     
-                               </li>
-                              
+
+                                </li>
+
+
+
 
                                 <li class="list-divider"></li>
 
@@ -1140,10 +1178,9 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="solicitar_permiso.html">Permisos</a></li>
+                                        <li><a href="lista_permisos.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                     
-
+                                        
                                     </ul>
                                 </li>
                                 <li>
