@@ -246,6 +246,7 @@
                                                         <p class="mar-no text-nowrap text-main text-semibold">Escriba un Nuevo Artículo</p>
                                                         <small>Última Actualización 8 hrs.</small>
                                                     </div>
+
                                                 </a>
                                             </li>
                                             <li>
@@ -378,7 +379,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Solicitudes Anticipos</h1>
+                        <h1 class="page-header text-overflow">Licencias</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -389,7 +390,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Anticipos</li>
+                        <li class="active">Licencias</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -407,7 +408,7 @@
                             <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Solicitudes de Permisos</h3>
+                                    <h3 class="panel-title">Búsqueda de Licencias</h3>
                                 </div>
 
                                 <div class="panel-body">
@@ -416,16 +417,17 @@
                                         <div class="col-sm-10">
 
                                             <div class="input-group mar-btm">
-                                                <input type="text" placeholder="Buscar" class="form-control">
+                                                <input type="text" placeholder="Buscar por trabajador, Fecha, etc" class="form-control">
                                                 <span class="input-group-btn">
 					                            <button class="btn btn-mint" type="button">Buscar</button>
 					                        </span>
                                             </div>
 
-
-
-
-                                        </div>
+                                         </div>
+                                         <div class="col-sm-2">
+                                                <a href="licencia_medica.html"> <button class="btn btn-success" type="submit">Nueva</button></a>
+              
+                                             </div>
 
                                        
                                     </div>
@@ -438,66 +440,50 @@
                                             <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
-                                                        <th style="width: 200px;">Trabajador</th>
-                                                        <th class="min-tablet">Monto</th>
-                                                        <th class="min-tablet">% del Sueldo</th>
-                                                        <th class="min-tablet">Fecha de solicitud</th></th>
-                                                        <th class="min-desktop">Fecha Fecha de Depósito</th>
-                                                        <th class="min-desktop">Mes-Año de Remuneración</th>
-                                                        <th class="min-desktop">Autorizar</th>
-                                                        <th class="min-desktop">Rechazar</th>
+                                                        <th class="min-tablet">Trabajador</th>
+                                                        <th class="min-tablet">Fecha de Inicio Reposo</th>
+                                                        <th class="min-tablet">Días</th></th>
+                                                        <th class="min-desktop">Estado</th>
+                                                        <th class="min-desktop"></th>
+                                                                                                           
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Carlos Castro Aravena</td>                                                    
-                                                        <td>$ 150.000</td>
-                                                        <td>5 %</td>
-                                                        <td>01/07/2018</td>
-                                                        <td>03/07/2018</td>
-                                                        <td>07/2018</td>                                                           
-                                                        <td style="text-align: center;">
-                                                            <div class="btn-group">
-                                                                   
-                                                                <button class="btn btn-primary btn-labeled"><a href="#"  style="color:white"> <i class="demo-pli-like"></i></a></button>
-                                                        
-                                                            </div>
-                                                        </td>
+                                                                                            
+                                                        <td>Juan Pérez</td>
+                                                        <td>01/07/2017</td>
+                                                        <td>3</td>
+                                                        <td>En proceso</td>
                                                         <td style="text-align: center;">
                                                                 <div class="btn-group">
-                                                                       
-                                                                    <button class="btn btn-primary btn-labeled"><a href="#"  style="color:white"> <i class="demo-pli-unlike"></i></a></button>
-                                                            
+                                                                    <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="#"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                    <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                        
+                                                                    <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
                                                                 </div>
-                                                        </td>
-                                                        <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
-                                                            DE R</td> -->
+                                                            </td>                                       
+                                                       
+                                                      
                                                     </tr>
                                                     <tr>
-                                                            <td>Roxana Salas Pérez</td>                                                    
-                                                            <td>$ 200.000</td>
-                                                            <td>12%</td>
-                                                            <td>01/07/2018</td>
-                                                            <td>10/07/2018</td>
-                                                            <td>07/2018</td>                                                           
-                                                            <td style="text-align: center;">
-                                                                <div class="btn-group">
-                                                                       
-                                                                    <button class="btn btn-primary btn-labeled"><a href="#"  style="color:white"> <i class="demo-pli-like"></i></a></button>
-                                                            
-                                                                </div>
-                                                            </td>
+                                                                                            
+                                                            <td>Rosa Muñoz</td>
+                                                            <td>08/08/2018</td>
+                                                            <td>15</td>
+                                                            <td>En proceso</td>
                                                             <td style="text-align: center;">
                                                                     <div class="btn-group">
-                                                                           
-                                                                        <button class="btn btn-primary btn-labeled"><a href="#"  style="color:white"> <i class="demo-pli-unlike"></i></a></button>
-                                                                
+                                                                        <button class="btn btn-primary btn-xs btn-icon btn-circle"><a href="#"><i class="demo-psi-pen-5 icon-xs"></i></a></button>
+                                                                        <button class="btn btn-success btn-xs btn-icon btn-circle"> <i class="demo-psi-tag icon-xs"></i></button>
+                            
+                                                                        <button class="btn btn-danger btn-xs btn-icon btn-circle"><i class="demo-psi-recycling icon-xs"></i></button>
                                                                     </div>
-                                                            </td>
-                                                            <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
-                                                                DE R</td> -->
+                                                                </td>                                        
+                                                           
+                                                          
                                                         </tr>
-                                                    
+                                                   
                                                   
 
 
@@ -965,7 +951,7 @@
     
                                         <!--Submenu-->
                                         <ul class="collapse">
-                                             <li><a href="lista_licencias.html">Registrar Licencias</a></li>
+                                            <li><a href="lista_licencias.html">Registrar Licencias</a></li>
                                             <li><a href="orden_reposo.html">Ver Orden de Reposo</a></li>
     
     
@@ -981,10 +967,7 @@
     
                                         <!--Submenu-->
                                         <ul class="collapse">
-                                            <li><a href="autorizar_permisos.html">Autorizar 
-                                                
-
-                                            </a></li>
+                                            <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
                                     </li>   
@@ -1002,7 +985,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>  
+                                    </li> 
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1016,7 +999,7 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>              
+                                    </li>               
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1049,7 +1032,8 @@
 
                                     </ul>
                                 </li>
-                                
+                               
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1105,7 +1089,7 @@
                                         </ul>
                                     </li>
     
-                                    
+                                   
     
                                     <!--Menu list item-->
                                     <li>
@@ -1166,7 +1150,7 @@
 
                                     </ul>
                                     <ul class="collapse">
-                                        <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
 
 
                                     </ul>
@@ -1207,7 +1191,7 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="solicitar_permiso.html">Permisos</a></li>
+                                        <li><a href="lista_permisos.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
                                         
                                     </ul>
@@ -1222,7 +1206,7 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                              <li><a href="obtener_liquidaciones.html">Obtener Liquidaciones</a></li>
-                                             <li><a href="obtener_certificados.html">Certificados</a></li>  
+                                             <li><a href="obtener_certificados.html">Certificados</a></li>    
                                            <li><a href="lista_cont_anexos.html">Contratos y Anexos</a></li>                                    
                                         </ul>
                                     </li>
