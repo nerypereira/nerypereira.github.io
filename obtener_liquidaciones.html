@@ -374,7 +374,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Datos del Postulante</h1>
+                        <h1 class="page-header text-overflow">Obtener Liquidaciones</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -384,8 +384,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">PERSONAL</a></li>
-                        <li class="active">Postulante</li>
+                        <li><a href="#">PORTAL DEL TRABAJADOR</a></li>
+                        <li class="active">Liquidaciones</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -400,227 +400,57 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Antecedentes Personales</h3>
+                                    <h3 class="panel-title">Obtener Liquidaciones</h3>
                                 </div>
-                                <div class="row">
-                                               
-                                        <div class="col-sm-12">
-                                            <div class="panel-footer text-right">
-                                                    <a href="buscar_postulantes.html"> <button class="btn btn-success" type="submit">Volver</button></a>
-                                            </div>
-                                
-                                        </div>
-        
-
-                            </div>
                                 <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Rut</label>
-                                                <input type="text" class="form-control" placeholder="12.967.879-1">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Carolina">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Paterno</label>
-                                                <input type="text" class="form-control" placeholder="Romero">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Apellido Materno</label>
-                                                <input type="text" class="form-control" placeholder="Carmona">
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Email</label>
-                                                <input type="text" class="form-control" placeholder="cromero@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Teléfono</label>
-                                                <input type="text" class="form-control" placeholder="992323456">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label class="control-label">Dirección</label>
-                                                <textarea class="form-control" rows="5" placeholder="Oficina Petronilla 243 casa 25, Condiminio San Marcos, Antofagasta"></textarea>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Fecha Nacimiento</label>
-                                                <input type="text" class="form-control" placeholder="25/04/1976">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Nacionalidad</label>
-                                                <input type="text" class="form-control" placeholder="Chilena">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Sexo</label>
-                                                <input type="text" class="form-control" placeholder="Femenino">
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Estado Civil</label>
-                                                <input type="text" class="form-control" placeholder="Casada">
-                                        </div>
-
-
-                                    </div>
-
-                                    <div>
-                                        
-
-                                        
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label for="licencia-conducir">Licencia de Conducir</label>
-                                            <input type="text" class="form-control" placeholder="Clase B">
-                                            
-
-                                        </div>
-                                      
-                                    </div>
-
+                                                                                           
                                    
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Desde</label>
+                                                <input type="month"   class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Hasta</label>
+                                                    <input type="month" class="form-control">
+                                                </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                               
+                                            <div class="col-sm-12">
+                                                    <div class="btn-group pull-right">
+                                                            <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
+                                                                <i class="fa fa-upload-cloud"></i> Descargar
+                                                            </button>
+                                                            <button id="dz-remove-btn" class="btn btn-danger cancel" type="reset" disabled="">
+                                                                <i class="demo-psi-trash"></i>
+                                                            </button>
+                                                        </div>
+                                    
+                                            </div>
+            
+
+                                </div>
+                                                
+                                 
+
+                                  
                                 </div>
                             </div>
                         </div>
 
 
 
-                  
+                       
 
                     </div>
-                    
-                            <div class="col-sm-4">
-                                    <div class="row">
-                                        <div class="panel">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Antecedentes Profesionales</h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                    <label class="control-label" >Nivel de Estudio</label>
-                                                                    <input type="text" class="form-control" placeholder="Universitaria Completa">
-                                                                </div>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="row">
-        
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Profesión</label>
-                                                                        <input type="text" class="form-control" placeholder="Enfermera">
-                                                                    </div>
-                                                        </div>
-                                                    
-        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Casa de Estudios</label>
-                                                                        <input type="text" class="form-control" placeholder="Universidad Católica del Norte">
-                                                                    </div>
-                                                        </div> 
-                
-        
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Año de Titulación</label>
-                                                                        <input type="text" class="form-control" placeholder="2005">
-                                                                    </div>
-                                                        </div>
-                                                    </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Nivel de Inglés</label>
-                                                                        <input type="text" class="form-control" placeholder="Escrito Básico">
-                                                                    </div>
-                                                         </div>    
-                
-        
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                    <label class="control-label" >Año de Titulación</label>
-                                                                    <input type="text" class="form-control" placeholder="2005">
-                                                                </div>
-                                                    </div>
-                                                </div>
-        
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Año de Experiencia</label>
-                                                                        <input type="text" class="form-control" placeholder="10 Años">
-                                                                    </div>
-                                                        </div>
-                                                </div>
-                                                <div class="row">
-                                                        <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                        <label class="control-label" >Pretenciones de Renta</label>
-                                                                        <input type="text" class="form-control" placeholder="$1.200.00 líquido">
-                                                                    </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                    </div>
-        
-                                  
-                                   
-                                </div>
-
-                    
-                   
+                  
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
@@ -946,8 +776,7 @@
                             <div id="mainnav-profile" class="mainnav-profile">
                                 <div class="profile-wrap text-center">
                                     <div class="pad-btm">
-                                       <!-- <img class="img-circle img-md" src="img/profile-photos/1.png" alt="Profile Picture">-->
-                                       <img class="img-responsive img-md" src="img/logo_cmds.jpg" alt="Profile Picture">
+                                        <img class="img-circle img-md" src="img/profile-photos/1.png" alt="Profile Picture">
                                     </div>
                                     <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
                                         <span class="pull-right dropdown-toggle">
@@ -1021,7 +850,7 @@
                                 <li>
                                     <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
-                                         <span class="menu-title">Beneficio</span>
+                                         <span class="menu-title">Reclutamiento</span>
                                         <i class="arrow"></i>
                                     </a>
 
@@ -1072,7 +901,7 @@
                                         </ul>
                                     </li>
                                  <!--Menu list item-->
-                                <li>
+                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Permisos</span>
@@ -1084,8 +913,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>  
-                                    
+                                    </li>   
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1113,7 +941,7 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>        
+                                    </li>          
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1142,12 +970,12 @@
                                    <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
                                         <li><a href="#">Administrar Beneficios</a></li>
-                                    
                                         
 
                                     </ul>
                                 </li>
-                                
+                                 
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1160,7 +988,7 @@
                                     <ul class="collapse">
                                             <li><a href="lista_cursos_prev.html">Crear Cursos</a></li>
                                             <li><a href="layouts-offcanvas-navigation.html">Ingresar Participantes</a></li>
-                                            <li><a href="entrega_epp.html">Entrega de EPP</a></li>
+                                            <li><a href="lista_epp.html">Entrega de EPP</a></li>
                                             <li><a href="comite_paritario.html">Comité Paritario</a></li>
                                            <li><a href="lista_accidentes.html">Registro de Accidentes</a></li>
                                             <li><a href="lista_investigaciones.html">Investigación de Accidentes</a></li>
@@ -1184,27 +1012,10 @@
                                 <!--Category name-->
                                 <li class="list-header">Remuneraciones</li>
 
+                               
+
                                 <!--Menu list item-->
                                 <li>
-                                    <a href="#">
-                                        <i class="demo-pli-boot-2"></i>
-                                        <span class="menu-title">Asistencia</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ui-buttons.html">Ingreso de Asistencia</a></li>
-                                        <li><a href="ui-panels.html">Modificar Asistencia</a></li>
-                                        <li><a href="ui-modals.html">Registrar Permisos</a></li>
-                                        <li><a href="licencia_medica.html">Registrar Licencias</a></li>
-                                        <li><a href="ui-components.html">Registrar Feriados</a></li>
-                                        <li><a href="ui-typography.html">Imprimir Asistencia</a></li>
-                                    </ul>
-                                </li>
-
-                                <!--Menu list item-->
-                                <li>    
                                     <a href="#">
                                         <i class="demo-pli-pen-5"></i>
                                         <span class="menu-title">Liquidaciones</span>
@@ -1216,12 +1027,11 @@
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
                                           
-                                          
-    
+                                         
                                         </ul>
                                     </li>
     
-                                    
+                                   
     
                                     <!--Menu list item-->
                                     <li>
@@ -1256,6 +1066,8 @@
                                            
                                         </ul>
                                     </li>
+                               
+                                
                                 <li class="list-divider"></li>
 
                                   <!--Category name-->
@@ -1323,10 +1135,11 @@
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
                                         <li><a href="lista_permisos.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                      
+                                       
+
+
                                     </ul>
                                 </li>
-
                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-computer-secure"></i>
@@ -1336,8 +1149,8 @@
     
                                         <!--Submenu-->
                                         <ul class="collapse">
-                                             <li><a href="obtener_liquidaciones.html">Obtener Liquidaciones</a></li>
-                                             <li><a href="obtener_certificados.html">Certificados</a></li>  
+                                            <li><a href="obtener_liquidaciones.html">Obtener Liquidaciones</a></li>
+                                            <li><a href="obtener_certificados.html">Certificados</a></li>  
                                            <li><a href="lista_cont_anexos.html">Contratos y Anexos</a></li>                                    
                                         </ul>
                                     </li>
@@ -1360,22 +1173,23 @@
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
-                                    <a href="#">
-                                        <i class="demo-pli-mail"></i>
-                                        <span class="menu-title">Comunicados</span>
-                                        <i class="arrow"></i>
-                                    </a>
+                                <!--Menu list item-->
+                                <li>
+                                        <a href="#">
+                                            <i class="demo-pli-mail"></i>
+                                            <span class="menu-title">Comunicados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                           
+    
+    
+                                        </ul>
+                                    </li>
 
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
-                                       
-
-
-                                    </ul>
-                                </li>
 
 
 
