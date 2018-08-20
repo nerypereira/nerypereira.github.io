@@ -375,19 +375,18 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Haber</h1>
+                        <h1 class="page-header text-overflow">Calcular Finiquito</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-
 
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li class="active">Remuneraciones</li>
+                        <li><a href="#">Remuneraciones</a></li>
+                        <li class="active">Finiquito</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -402,100 +401,83 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Mantenedor de Haberes</h3>
+                                    <h3 class="panel-title">Cálculo de Finiquito</h3>
                                 </div>
                                 <div class="panel-body">
 
-                                        <div class="row">
-                                                <div class="col-md-4">
-                                                        <div class="form-group">
-                                                                <label class="control-label">Tipo Haber</label>
-                                                                <select class="form-control" data-placeholder="Seleccione..." id="selec" onchange="ocultaTipoLey();">
-                                                                 <option value="val1">Masivo</option>
-                                                                 <option value="val2">individual</option>                
-                                                               
-                                                                                                             
-                                                               
-                                                            </select>
-                                                            </div>
-                                                    </div>
-                                                   
-                                                            <div class="col-sm-4">
-                                                                    <label class="control-label">Frecuencia</label>
-                                                                    <select class="form-control" data-placeholder="Seleccione..." id="selec" onchange="individual();">
-                                                                    <option value="val2">Mensual</option>               
-                                                                    <option value="val1">Única Vez</option>
-                                                                   
-                                                                                                                 
-                                                                   
-                                                                </select>
-                                                            </div>
-
-                                                    
-                                                    <div class="col-sm-4">
-                                                           <div class="panel-footer text-right">
-                                                                   <a href="lista_haberes.html"><button class="btn btn-success" type="submit">Actualizar</button></a>
-                                                               </div>
-                                   
-                                                    </div>
-           
-                                               
-                                            </div>
-                                           
-                                            <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label">Estado</label>
-                                                            <select class="form-control" data-placeholder="Seleccione..." id="sector" onchange="ocultaTipoLey();">
-                                                            <option value="val1">Vigente</option>
-                                                            <option value="val2">Cerrado</option>
-                                                           
-                                                           
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Fecha de Aplicación</label>
-                                                                <input type="date" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                </div>
-                                         
-                                                                 
-                                     
-
                                     <div class="row">
-                                            <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Código del Haber</label>
-                                                        <input type="text" class="form-control" placeholder="2001">
-                                                    </div>
-                                                </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Descripción del Haber</label>
-                                                        <input type="text" class="form-control" placeholder="Colación">
+                                                     <div class="form-group">
+                                                            <input type="text" placeholder="Buscar por Rut o Nombre del Trabajador" class="form-control">
+                                                            <span class="input-group-btn">
+                                                            
+                                                       
                                                     </div>
                                                 </div>
-                                               
-                                               
-                                                
+                                                <div class="col-sm-4">
+                                                        <button class="btn btn-mint" type="button">Buscar</button>
+                                                </div>
+                                                <div class="col-sm-2">
+
+
+                                                        <a href="lista_trab_finiquitos.html"> <button class="btn btn-success" type="submit">Volver</button></a>
+            
+            
+                                                    </div>
+                                                 
                                     </div>
                                     
+
                                     <div class="row">
-                                            <div class="col-sm-6">
+                                               
+                                                <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label class="control-label">Monto</label>
-                                                        <input type="text" class="form-control" placeholder="60.000">
+                                                        <label class="control-label">Nombre Completo</label>
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
+                                    </div> 
+                                    <div class="row">
+                                            <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                <label class="control-label">Fecha Desvinculación</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Causal</label>
+                                                        <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                            <option value="">Seleccione...</option>
+                                                            <option value="femenino">Causal 1</option>
+                                                            <option value="femenino">Causal 2</option>
+                                                            <option value="masculino">Causal 3</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+
+
+                                    </div>   
+                                    
+                                    
+                                    <div class="row">
                                                
-                                               
-                                               
-                                                
+                                                <div class="col-sm-12">
+                                                    <div class="panel-footer text-right">
+                                                            <button class="btn btn-success" type="submit" onclick="mensaje();">Calcular Finiquito</button>
+                                                    </div>
+                                        
+                                                </div>
+                                                <script>
+                                                        function mensaje(){
+                                                           alert("Se entrega una pantalla con el resultado del Cálculo del finiquito");
+                                                        }
+                                                </script>
+                    
+
                                     </div>
+                                                
+                                    
                                    
                                                         
                                   
@@ -974,7 +956,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>  
+                                    </li>   
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -988,7 +970,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>          
+                                    </li>         
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1027,15 +1009,16 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                   <!--Submenu-->
-                                   <ul class="collapse">                                        
+                                  <!--Submenu-->
+                                  <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
                                         <li><a href="#">Administrar Beneficios</a></li>
                                         
 
                                     </ul>
                                 </li>
-                                
+                               
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1072,7 +1055,8 @@
                                 <!--Category name-->
                                 <li class="list-header">Remuneraciones</li>
 
-                               
+                                
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1086,12 +1070,13 @@
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
                                           
-                                           
+                                          
     
                                         </ul>
                                     </li>
     
                                    
+    
                                     <!--Menu list item-->
                                     <li>
                                         <a href="#">
@@ -1103,8 +1088,7 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                             <li><a href="lista_trab_finiquitos.html">Calcular Finiquito</a></li>
-                                         
-    
+                                           
                                         </ul>
                                     </li>
     
@@ -1123,36 +1107,37 @@
                                            
                                         </ul>
                                     </li>
+
                                 <li class="list-divider"></li>
 
                            
-                                 <!--Category name-->
-                                 <li class="list-header">MANTENEDORES</li>
+                               <!--Category name-->
+                               <li class="list-header">MANTENEDORES</li>
                                   
-                                 <!--Menu list item-->
-                                 <li>
-                                      <a href="#">
-                                          <i class="demo-pli-computer-secure"></i>
-                                          <span class="menu-title">INTERNOS</span>
-                                          <i class="arrow"></i>
-                                      </a>  
-                                       <!--Submenu-->
-                                      <ul class="collapse">
-                                          <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
-  
-  
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_sector.html">Sector</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
+                               <!--Menu list item-->
+                               <li>
+                                    <a href="#">
+                                        <i class="demo-pli-computer-secure"></i>
+                                        <span class="menu-title">INTERNOS</span>
+                                        <i class="arrow"></i>
+                                    </a>  
+                                     <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
+
+
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="lista_sector.html">Sector</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
+                                           <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
     
@@ -1162,15 +1147,14 @@
     
     
                                     </ul> 
-                                      <ul class="collapse">
+                                    <ul class="collapse">
                                             <li><a href="lista_centro_costo.html">Centro de Costo</a></li>
     
     
                                     </ul> 
-  
-                                     
-                               </li>
-                              
+                                   
+                             </li>
+                            
 
                                 <li class="list-divider"></li>
 
@@ -1188,9 +1172,9 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="solicitar_permiso.html">Permisos</a></li>
+                                        <li><a href="solicitar_permiso.html">Permisos</a></li> 
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                     
+
 
                                     </ul>
                                 </li>
@@ -1223,7 +1207,6 @@
                                             <li><a href="inf_aguinaldo.html">Aguinaldo</a></li>
                                             <li><a href="inf_escolar.html">Escolaridad</a></li>
                                             <li><a href="inf_salud.html">Salud</a></li>
-
                                     </ul>
                                 </li>
 

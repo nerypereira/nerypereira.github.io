@@ -40,9 +40,10 @@
 
     <!--Demo [ DEMONSTRATION ]-->
 
-    <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
+   <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
   <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+
 
 
 
@@ -218,8 +219,7 @@
 
 
 
-
-                       <!--Notification dropdown-->
+                        <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -349,7 +349,6 @@
                         <!--End user dropdown-->
 
 
-
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -375,18 +374,17 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Haber</h1>
+                        <h1 class="page-header text-overflow">Liquidación de Sueldo</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-
 
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">PERSONAL</a></li>
                         <li class="active">Remuneraciones</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -399,122 +397,583 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
+                        <!--Datos Generales-->
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Mantenedor de Haberes</h3>
+                                    <h3 class="panel-title">Antecedentes Personales y Contractuales</h3>
                                 </div>
                                 <div class="panel-body">
-
-                                        <div class="row">
-                                                <div class="col-md-4">
-                                                        <div class="form-group">
-                                                                <label class="control-label">Tipo Haber</label>
-                                                                <select class="form-control" data-placeholder="Seleccione..." id="selec" onchange="ocultaTipoLey();">
-                                                                 <option value="val1">Masivo</option>
-                                                                 <option value="val2">individual</option>                
-                                                               
-                                                                                                             
-                                                               
-                                                            </select>
-                                                            </div>
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                                <div class="input-group mar-btm">
+                                                        <input type="text" placeholder="Buscar por Rut o Periodo (no guarda periodos anteriores)" class="form-control">
+                                                        <span class="input-group-btn">
+                                                        <button class="btn btn-mint" type="button">Buscar</button>
+                                                    </span>
                                                     </div>
-                                                   
-                                                            <div class="col-sm-4">
-                                                                    <label class="control-label">Frecuencia</label>
-                                                                    <select class="form-control" data-placeholder="Seleccione..." id="selec" onchange="individual();">
-                                                                    <option value="val2">Mensual</option>               
-                                                                    <option value="val1">Única Vez</option>
-                                                                   
-                                                                                                                 
-                                                                   
-                                                                </select>
-                                                            </div>
 
-                                                    
-                                                    <div class="col-sm-4">
-                                                           <div class="panel-footer text-right">
-                                                                   <a href="lista_haberes.html"><button class="btn btn-success" type="submit">Actualizar</button></a>
-                                                               </div>
-                                   
-                                                    </div>
-           
-                                               
+                                        </div>
+                                       
+                                        <div class="col-sm-4">
+                                                <a href="lista_trab_finiquitos.html"> <button class="btn btn-success" type="submit">Volver</button></a>
+                                        </div>
+                                    </div>  
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Rut</label>
+                                                <input type="text" class="form-control" placeholder="10.567.456-3">
                                             </div>
-                                           
-                                            <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label">Estado</label>
-                                                            <select class="form-control" data-placeholder="Seleccione..." id="sector" onchange="ocultaTipoLey();">
-                                                            <option value="val1">Vigente</option>
-                                                            <option value="val2">Cerrado</option>
-                                                           
-                                                           
-                                                        </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Fecha de Aplicación</label>
-                                                                <input type="date" class="form-control">
-                                                            </div>
-                                                        </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre</label>
+                                                <input type="text" class="form-control" placeholder="Camila">
+                                            </div>
+                                        </div>
 
-                                                </div>
-                                         
-                                                                 
-                                     
+                                    </div>
 
                                     <div class="row">
-                                            <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Código del Haber</label>
-                                                        <input type="text" class="form-control" placeholder="2001">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Descripción del Haber</label>
-                                                        <input type="text" class="form-control" placeholder="Colación">
-                                                    </div>
-                                                </div>
-                                               
-                                               
-                                                
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido Paterno</label>
+                                                <input type="text" class="form-control" placeholder="Castro">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido Materno</label>
+                                                <input type="text" class="form-control" placeholder="Rodriguez">
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                     
                                     <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Fecha del Proceso</label>
+                                                <input type="text" class="form-control" placeholder="07/2018">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Fecha de Ingreso</label>
+                                                <input type="text" class="form-control" placeholder="08/07/2016">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
                                             <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Monto</label>
-                                                        <input type="text" class="form-control" placeholder="60.000">
-                                                    </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Sector</label>
+                                                    <input type="text" class="form-control" placeholder="Docente">
                                                 </div>
-                                               
-                                               
-                                               
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Fecha de Término</label>
+                                                    <input type="text" class="form-control" placeholder="08/07/2016">
+                                                </div>
+                                            </div>
+    
+                                        </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Tipo de Ley</label>
+                                                <input type="text" class="form-control" placeholder="19.070 (ESTATUTO DOCENTE) ">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Tipo de Contrato</label>
+                                                <input type="text" class="form-control" placeholder="Indefinido">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Tope Imponible</label>
+                                                    <input type="text" class="form-control" placeholder="1.739.702 ">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Con Convenio</label>
+                                                    <input type="text" class="form-control" placeholder="SI">
+                                                </div>
+                                            </div>
+    
+                                        </div>
+
+                                    <div>
+                                            <div class="row">
+                                                    <div class="panel">
+                                                        <div class="panel-heading">
+                                                            <h3 class="panel-title">Montos Efectos a Cotización</h3>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Cotización AFP</label>
+                                                                        <input type="text" class="form-control" placeholder="1.518.330">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">Cotización Salud</label>
+                                                                            <input type="text" class="form-control" placeholder="1.518.330">
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">Cotización AFC</label>
+                                                                                <input type="text" class="form-control" placeholder="1.518.330">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="control-label">Cotización SIS</label>
+                                                                                    <input type="text" class="form-control" placeholder="1.518.330">
+                                                                                </div>
+                                                                            </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="panel-heading">
+                                                                            <h3 class="panel-title">Leyes Legales</h3>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Total Imponible</label>
+                                                                        <input type="text" class="form-control" placeholder="1.518.330">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label">Leyes Sociales</label>
+                                                                            <input type="txt" class="form-control" placeholder="289.090">
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">Afecto Impuesto</label>
+                                                                                <input type="txt" class="form-control" placeholder="1.229.240">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                 <label class="control-label">Seguro</label>
+                                                                                 <input type="txt" class="form-control" placeholder="26.393">
+                                                                            </div>
+                                                                    </div>
+                                                                                                   
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="panel-heading">
+                                                                            <h3 class="panel-title">Totales</h3>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">Haberes</label>
+                                                                                <input type="txt" class="form-control" placeholder="1.518.330">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                 <label class="control-label">Descuentos</label>
+                                                                                 <input type="txt" class="form-control" placeholder="615.483">
+                                                                            </div>
+                                                                    </div>
+                                                                                                   
+                                                            </div>
+                                                            <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                            <div class="form-group">
+                                                                                <label class="control-label">Líquido a Pagar</label>
+                                                                                <input type="txt" class="form-control" placeholder="902.847">
+                                                                            </div>
+                                                                    </div>
+                                                                   
+                                                                                                   
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                    
+                                                </div>
                                                 
+                                        
+
+                                        
                                     </div>
                                    
-                                                        
-                                  
-
-                                                
                                    
-                             
-
                                 </div>
                             </div>
                         </div>
 
-                       
-                      
 
+                        <!--Número de Días-->
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Número de Días</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Trabajados</label>
+                                                    <input type="txt" class="form-control" placeholder="30">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                            <label class="control-label">Vacaciones</label>
+                                                            <input type="txt" class="form-control">
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Licencia</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                </div>   
+                                                <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                                <label class="control-label">Ausentes</label>
+                                                                <input type="text" class="form-control">
+                                                        </div>
+                                                </div> 
+                                                     
+                                            
+                                        </div>                                      
+
+                                        <div class="row">
+                                                
+                                                <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Horas de Atraso</label>
+                                                            <input type="text" class="form-control" placeholder="2">
+                                                        </div>
+                                                </div>    
+                                        </div>
+
+
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Documentos Adjuntos-->
+                        <div class="col-sm-4">
+                               <div class="row">
+                                <div class="panel">
+                                        <div class="panel-heading">
+                                                <h3 class="panel-title">Liquidaciones Históricas</h3>
+                                            </div>
+                                         <div class="panel-body">
+                                                <div class="row">
+                                                        <div class="col-sm-12">
+                                                                <div class="input-group mar-btm">
+                                                                        <input type="text" placeholder="Buscar por Periodo y Descargar" class="form-control">
+                                                                        <span class="input-group-btn">
+                                                                        <button class="btn btn-mint" type="button">Buscar</button>
+                                                                    </span>
+                                                                    </div>
+                
+                                                        </div>
+                                                    </div>
+                                             <div class="row">
+                                                    <div class="col-sm-12">
+                                                            <h3 class="panel-title">3 últimas Liquidaciones</h3>
+                                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                                <thead>
+
+                                                                    <tr>
+                                                                        <th class="min-tablet">Documento</th>
+                                                                        <th style="width: 200px;">Periodo</th>
+                                                                                                                                                                                                            
+                                                                       
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Liquidacion0718</td>                                                    
+                                                                        <td>07/2018</td>
+                                                                                                                                                                                   
+                                                                       
+                                                                      
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Liquidacion0618</td>                                                      
+                                                                        <td>06/2018</td>
+                                                                     
+                                                                        
+                                                                       
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td>Liquidacion0518</td>                                                      
+                                                                            <td>05/2018</td>
+                                                                           
+                                                                            
+                                                                           
+                                                                        </tr>
+                
+                
+                
+                                                                </tbody>
+                                                            </table>
+                
+                                                        </div>
+
+                                             </div>
+                                            <div class="row">
+                                                <div class="=col-sm-12">
+                                                        <div class="bord-top pad-ver">
+                                                               
+                                                    
+                                                                <div class="btn-group pull-right">
+                                                                    <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
+                                                                        <i class="fa fa-upload-cloud"></i> Descargar
+                                                                    </button>
+                                                                    
+                                                                </div>
+                                                        </div>
+                                                </div>
+    
+                                            </div>    
+                                        </div>    
+                                </div>
+                                </div>
+                        </div>  
                     </div>
-                   
+                  
+                     <!--Detalle Liquidación-->
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="panel">
+                               <div class="panel-heading">
+                                   <h3 class="panel-title">Detalle</h3>
+                               </div>
+                                <div class="panel-body">
+                                        <div class="row">
+                                                
+                                                <div class="col-sm-12">
+                                                        <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 50px;">Código Haber</th>
+                                                                    <th style="width: 200px;">Descripción</th>
+                                                                    <th class="min-tablet">Valor</th></th>
+                                                                    <th class="min-tablet">Cantidad</th></th>
+                                                                    <th class="min-tablet">Unidad</th></th>
+                                                                                                                                     
+                                                                   
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>                                                    
+                                                                    <td>Sueldo Base</td>
+                                                                    <td>750.000</td>
+                                                                    <td>30</td>
+                                                                    <td>Días</td>                                                                                                                       
+                                                                   
+                                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>                                                      
+                                                                    <td>Gratificación</td>
+                                                                    <td>89.063</td>
+                                                                    <td>1</td>
+                                                                    <td>FGRA</td>   
+                                                                                                                             
+                                                                   
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>52</td>                                                      
+                                                                        <td>Bono Especial</td>
+                                                                        <td>300.000</td>
+                                                                        <td>0</td>
+                                                                        <td>$</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                               
+                                                                <tr>
+                                                                        <td>201</td>                                                      
+                                                                        <td>Bono Trimestral Reliq.</td>
+                                                                        <td>379.267</td>
+                                                                        <td>0</td>
+                                                                        <td>$</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>300000</td>                                                      
+                                                                        <td>Total a Pago</td>
+                                                                        <td>902.847</td>
+                                                                        <td>0</td>
+                                                                        <td>$</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>300007</td>                                                      
+                                                                        <td>Aporte Seguro Desemp. Empl.</td>
+                                                                        <td>24.293</td>
+                                                                        <td>1,6</td>
+                                                                        <td>% IMS </td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>300008</td>                                                      
+                                                                        <td>Aporte Seguro Desemp. Trab.</td>
+                                                                        <td>12.147</td>
+                                                                        <td>0,8</td>
+                                                                        <td>% IMS </td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>300009</td>                                                      
+                                                                        <td>Aporte Mutual</td>
+                                                                        <td>19.586</td>
+                                                                        <td>1,2</td>
+                                                                        <td>% IM</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                  
+                                                              
+            
+            
+            
+                                                            </tbody>
+                                                        </table>
+            
+                                                    </div>
+
+                                        </div>
+                                        <div class="row">
+                                                
+                                                <div class="col-sm-12">
+                                                        <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 50px;">Código Dcto.</th>
+                                                                    <th style="width: 200px;">Descripción</th>
+                                                                    <th class="min-tablet">Valor</th></th>
+                                                                    <th class="min-tablet">Cantidad</th></th>
+                                                                    <th class="min-tablet">Unidad</th></th>
+                                                                                                                                     
+                                                                   
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>402</td>                                                    
+                                                                    <td>Previsión</td>
+                                                                    <td>173.697</td>
+                                                                    <td>11,44</td>
+                                                                    <td>%IM</td>                                                                                                                       
+                                                                   
+                                                                  
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>406</td>                                                      
+                                                                    <td>Salud</td>
+                                                                    <td>106.283</td>
+                                                                    <td>3,5</td>
+                                                                    <td>UF</td>   
+                                                                                                                             
+                                                                   
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>52</td>                                                      
+                                                                        <td>Seguro Desempleo</td>
+                                                                        <td>9110</td>
+                                                                        <td>0,6</td>
+                                                                        <td>%IMS</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                               
+                                                                <tr>
+                                                                        <td>201</td>                                                      
+                                                                        <td>Impuesto Único</td>
+                                                                        <td>26.393</td>
+                                                                        <td>0</td>
+                                                                        <td>IU</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>309</td>                                                      
+                                                                        <td>Anticipo</td>
+                                                                        <td>200.000</td>
+                                                                        <td>0</td>
+                                                                        <td>$</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>310</td>                                                      
+                                                                        <td>Préstamo</td>
+                                                                        <td>100.000</td>
+                                                                        <td>0</td>
+                                                                        <td>$</td>   
+                                                                                                                                 
+                                                                       
+                                                                </tr>
+                                                               
+                                                              
+                                                              
+            
+            
+            
+                                                            </tbody>
+                                                        </table>
+            
+                                                    </div>
+
+                                        </div>
+                                               
+
+                               </div>
+
+                               
+                           </div>
+
+                       </div>
+                      
+                    </div>
                 </div>
-               
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -565,7 +1024,7 @@
                         <!--================================-->
                         <div class="tab-content">
 
-                            <!--First tab (Contact list)-->
+                           <!--First tab (Contact list)-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <div class="tab-pane fade in active" id="demo-asd-tab-1">
                                 <p class="pad-all text-main text-sm text-uppercase text-bold">
@@ -664,6 +1123,7 @@
                             </div>
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End first tab (Contact list)-->
+
 
 
                             <!--Second tab (Custom layout)-->
@@ -806,6 +1266,7 @@
         <!--===================================================-->
         <!--END ASIDE-->
 
+
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
         <nav id="mainnav-container">
@@ -909,19 +1370,19 @@
 
                                 <!--Menu list item-->
                                 <li>
-                                        <a href="#">
-                                                <i class="demo-pli-split-vertical-2"></i>
-                                             <span class="menu-title">Reclutamiento</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
+                                    <a href="#">
+                                            <i class="demo-pli-split-vertical-2"></i>
+                                         <span class="menu-title">Reclutamiento</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
 
 
                                     <!--Submenu-->
 
                                     <ul class="collapse">
                                         <li><a href="mant_seleccion.html">Publicar</a></li>
-                                      <!--  <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
+                                       <!-- <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
                                          <li><a href="buscar_postulantes.html">Buscar Postulantes</a></li>
 
                                     </ul>
@@ -945,8 +1406,8 @@
 
                                     </ul>
                                 </li>
-                                <!--Menu list item-->
-                                <li>
+                                 <!--Menu list item-->
+                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Licencias/Orden Reposo</span>
@@ -974,22 +1435,22 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>  
-                                 <!--Menu list item-->
-                                 <li>
-                                        <a href="#">
-                                            <i class="demo-pli-split-vertical-2"></i>
-                                            <span class="menu-title">Vacaciones</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
-                                            
-                                        </ul>
-                                    </li>          
-                                     <!--Menu list item-->
+                                    </li>   
+                                    <!--Menu list item-->
+                                    <li>
+                                            <a href="#">
+                                                <i class="demo-pli-split-vertical-2"></i>
+                                                <span class="menu-title">Vacaciones</span>
+                                                <i class="arrow"></i>
+                                            </a>
+
+                                            <!--Submenu-->
+                                            <ul class="collapse">
+                                                <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
+                                                
+                                            </ul>
+                                        </li>  
+                                         <!--Menu list item-->
                                  <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
@@ -1002,7 +1463,7 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>       
+                                    </li>         
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1035,7 +1496,8 @@
 
                                     </ul>
                                 </li>
-                                
+                              
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1073,6 +1535,7 @@
                                 <li class="list-header">Remuneraciones</li>
 
                                
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1085,13 +1548,13 @@
                                             <li><a href="lista_trab_Liqui.html">Ver Liquidaciones</a></li>
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
-                                          
-                                           
+                                                                                                                 
     
                                         </ul>
                                     </li>
     
                                    
+    
                                     <!--Menu list item-->
                                     <li>
                                         <a href="#">
@@ -1103,9 +1566,7 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                             <li><a href="lista_trab_finiquitos.html">Calcular Finiquito</a></li>
-                                         
-    
-                                        </ul>
+                                           
                                     </li>
     
                                     <!--Menu list item-->
@@ -1123,36 +1584,36 @@
                                            
                                         </ul>
                                     </li>
+                                
                                 <li class="list-divider"></li>
 
-                           
-                                 <!--Category name-->
-                                 <li class="list-header">MANTENEDORES</li>
-                                  
-                                 <!--Menu list item-->
-                                 <li>
-                                      <a href="#">
-                                          <i class="demo-pli-computer-secure"></i>
-                                          <span class="menu-title">INTERNOS</span>
-                                          <i class="arrow"></i>
-                                      </a>  
-                                       <!--Submenu-->
-                                      <ul class="collapse">
-                                          <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
-  
-  
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_sector.html">Sector</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
-                                              <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-      
-      
-                                      </ul> 
-                                      <ul class="collapse">
+                                  <!--Category name-->
+                                  <li class="list-header">MANTENEDORES</li>
+
+                               <!--Menu list item-->
+                               <li>
+                                    <a href="#">
+                                        <i class="demo-pli-computer-secure"></i>
+                                        <span class="menu-title">INTERNOS</span>
+                                        <i class="arrow"></i>
+                                    </a>  
+                                     <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
+
+
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="lista_sector.html">Sector</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
+                                            <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+    
+    
+                                    </ul> 
+                                    <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
     
@@ -1162,17 +1623,18 @@
     
     
                                     </ul> 
-                                      <ul class="collapse">
+                                    <ul class="collapse">
                                             <li><a href="lista_centro_costo.html">Centro de Costo</a></li>
     
     
                                     </ul> 
-  
-                                     
-                               </li>
-                              
+                                   
+                             </li>
+                            
 
-                                <li class="list-divider"></li>
+                           
+
+                            <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
@@ -1190,7 +1652,8 @@
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
                                         <li><a href="solicitar_permiso.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
-                                     
+                                       
+
 
                                     </ul>
                                 </li>
@@ -1227,22 +1690,22 @@
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
-                                    <a href="#">
-                                        <i class="demo-pli-mail"></i>
-                                        <span class="menu-title">Comunicados</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                        <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
-                                       
-
-
-                                    </ul>
-                                </li>
+                                <!--Menu list item-->
+                                <li>
+                                        <a href="#">
+                                            <i class="demo-pli-mail"></i>
+                                            <span class="menu-title">Comunicados</span>
+                                            <i class="arrow"></i>
+                                        </a>
+    
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                           
+    
+    
+                                        </ul>
+                                    </li>
 
 
 
