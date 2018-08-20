@@ -42,7 +42,7 @@
 
     <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
-  <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+    <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
 
 
@@ -71,6 +71,9 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
+
+    <style type="text/css">
+    </style>
 
 </head>
 
@@ -165,12 +168,12 @@
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>Noticias</p>
                                         <p class="pad-top mar-top bord-top text-sm"> Se comunica que....
-                                            </p>
+                                        </p>
                                     </div>
                                     <div class="col-sm-4 col-md-3">
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                           
+
                                             <li>
                                                 <a href="#" class="media mar-btm">
                                                     <div class="media-left">
@@ -182,8 +185,8 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            
-                                            
+
+
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
@@ -219,7 +222,7 @@
 
 
 
-                       <!--Notification dropdown-->
+                        <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -233,7 +236,7 @@
                                 <div class="nano scrollable">
                                     <div class="nano-content">
                                         <ul class="head-list">
-                                            
+
                                             <li>
                                                 <a class="media" href="#">
                                                     <div class="media-left">
@@ -375,7 +378,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Curso Prevención de Riesgos</h1>
+                        <h1 class="page-header text-overflow">Capacitaciones</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -386,7 +389,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">Prevención</li>
+                        <li class="active">Capacitación</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -398,120 +401,116 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-12">
+
+                            <!-- Add Row -->
+                            <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Crear Curso</h3>
+                                    <h3 class="panel-title">Capacitaciones</h3>
                                 </div>
+
                                 <div class="panel-body">
-                                        <div class="row">
-                                               
-                                                <div class="col-sm-12">
-                                                    <div class="panel-footer text-right">
-                                                            <a href="lista_cursos_prev.html"><button class="btn btn-success" type="submit">Volver</button></a>  
-                                                    </div>
-                                        
-                                                </div>
-                
+                                    <div class="row">
+
+                                        <div class="col-sm-9">
+
+                                            <div class="input-group mar-btm">
+                                                <input type="text" placeholder="Buscar Curso" class="form-control">
+                                                <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Buscar</button>
+					                        </span>
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                        <div class="col-sm-3">
+
+
+                                            <a href="asignar_capacitacion.html"> <button class="btn btn-success" type="submit">Asignar Participantes</button></a>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row"></div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th  style="width: 300px;">Nombre</th>
+                                                        <th style="width: 100px;">Relator</th>  
+                                                        <th style="width: 100px;">Cant. de Horas</th>  
+                                                        <th style="width: 100px;">Fecha Inicio</th>  
+                                                        <th style="width: 100px;">Fecha Fin</th>   
+                                                        <th style="width: 100px;">Cupos</th>                                                       
+                                                        <th style="width: 10px;">Seleccione</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Estratégia Resolución conflictos</td>
+                                                        <td>Educrea</td>
+                                                        <td>30 Hrs</td>
+                                                        <td>15/09/2018</td>
+                                                        <td>18/09/2018</td>
+                                                        <td>100</td>
+                                                        <td style="text-align: center;">
+                                                                <div class="checkbox">
+                                                                        <input id="demo-form-checkbox-3" class="magic-checkbox" type="checkbox">
+                                                                        <label for="demo-form-checkbox-3"></label>
+                                                                     </div>
+                                                            </td>      
+                                                        <!-- <td>SOLANGE ESTEPHANY MARIN PASTEN JARDIN INFANTIL EMPRESA INDIVIDUAL
+                                                            DE R</td> -->
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Desarrollo Habilidades Cognitivas</td>
+                                                        <td>Educrea</td>
+                                                        <td>45 Hrs</td>
+                                                        <td>20/09/2018</td>
+                                                        <td>23/09/2018</td>
+                                                        <td>100</td>
+                                                        <td style="text-align: center;">
+                                                                <div class="checkbox">
+                                                                        <input id="demo-form-checkbox-4" class="magic-checkbox" type="checkbox">
+                                                                        <label for="demo-form-checkbox-4"></label>
+                                                                     </div>
+                                                            </td>      
+                                                    </tr>
+                                                   
+
+                                                   
+
+                                                   
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
 
                                     </div>
 
-                                    <div class="row">
-                                                <div class="col-sm-6">
-                                                     <div class="form-group">
-                                                        <label class="control-label">Nombre</label>
-                                                        <input type="text" class="form-control"  placeholder="Psicosocial">
-                                                       
-                                                    </div>
-                                                </div>
-                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Código del Curso</label>
-                                                        <input type="text" class="form-control"  placeholder="PS4923">
-                                                    </div>
-                                                </div>
 
-                                    </div>
-                                    
- 
-                                    <div class="row">
-                                            <div class="col-sm-6">
-                                                     <div class="form-group">
-                                                <label class="control-label">Fecha Inicio</label>
-                                                <input type="text" class="form-control" placeholder="15/09/2018" >
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Fecha Término</label>
-                                                        <input type="text" class="form-control" placeholder="18/09/2018" >
-                                                    </div>
-                                            </div>
-
-
-                                    </div>   
-                                    <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Materia del Curso</label>
-                                                    <input type="text" class="form-control" placeholder="Psicosocial" >
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Cupos Disponibles</label>
-                                                    <input type="text" class="form-control" placeholder="100">
-                                                </div>
-                                            </div>
-    
-    
-                                        </div>
-                                        <div class="row">
-                                                <div class="col-sm-12">
-                                                        <label class="control-label">Relator</label>
-                                                        <input type="text" class="form-control" placeholder="Educrea">
-                                                </div>
-                                        </div>
-                                        <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Sector Asignado</label>
-                                                        <input type="text" class="form-control" placeholder="Educacional">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                                <label class="control-label">Cargo Asignado</label>
-                                                                <input type="text" class="form-control" placeholder="Docente">
-                                                            </div>
-                                                </div>
-        
-        
-                                            </div>
-                                 
-                                    
-                                    
-                                                
-                                    
-                                   
-                                                        
-                                  
-
-                                                
-                                   
-                             
 
                                 </div>
                             </div>
+
                         </div>
 
-                       
-                      
+
+
 
                     </div>
-                   
+
                 </div>
-               
+
+
+
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -519,7 +518,7 @@
 
 
             </div>
-            
+
 
         </div>
         <!--===================================================-->
@@ -583,7 +582,7 @@
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">                                            
+                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">
                                             <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
                                         </div>
                                         <div class="media-body">
@@ -655,7 +654,7 @@
                                 </div>
 
 
-                               
+
 
 
                             </div>
@@ -906,19 +905,19 @@
 
                                 <!--Menu list item-->
                                 <li>
-                                        <a href="#">
-                                                <i class="demo-pli-split-vertical-2"></i>
-                                             <span class="menu-title">Reclutamiento</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
+                                    <a href="#">
+                                        <i class="demo-pli-split-vertical-2"></i>
+                                         <span class="menu-title">Reclutamiento</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
 
 
                                     <!--Submenu-->
 
                                     <ul class="collapse">
                                         <li><a href="mant_seleccion.html">Publicar</a></li>
-                                      <!--  <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
+                                       <!-- <li><a href="perfil_postulante.html">Perfil del Postulante</a></li>-->
                                          <li><a href="buscar_postulantes.html">Buscar Postulantes</a></li>
 
                                     </ul>
@@ -958,6 +957,7 @@
     
                                         </ul>
                                     </li>
+
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -971,7 +971,7 @@
                                             <li><a href="autorizar_permisos.html">Autorizar Permisos</a></li>
                                             
                                         </ul>
-                                    </li>   
+                                    </li> 
                                  <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -985,7 +985,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>   
+                                    </li>          
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -999,8 +999,7 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>             
-
+                                    </li>       
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1025,15 +1024,15 @@
                                         <i class="arrow"></i>
                                     </a>
 
-                                    <!--Submenu-->
-                                    <ul class="collapse">                                        
-                                            <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
-                                            <li><a href="#">Administrar Beneficios</a></li>
-                                            
-    
-                                        </ul>
-                                    </li>
-                                     
+                                  <!--Submenu-->
+                                  <ul class="collapse">                                        
+                                        <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
+                                        <li><a href="#">Administrar Beneficios</a></li>
+                                        
+
+                                    </ul>
+                                </li>
+                              
 
                                 <!--Menu list item-->
                                 <li>
@@ -1071,7 +1070,7 @@
                                 <!--Category name-->
                                 <li class="list-header">Remuneraciones</li>
 
-                                
+                               
 
                                 <!--Menu list item-->
                                 <li>
@@ -1080,12 +1079,12 @@
                                         <span class="menu-title">Liquidaciones</span>
                                         <i class="arrow"></i>
                                     </a>
-
                                     <ul class="collapse">
                                             <li><a href="lista_trab_Liqui.html">Ver Liquidaciones</a></li>
-                                            <li><a href="lista_haberes.html">Administrar Haberes</a></li>
-                                            <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
-                                          
+                                           <  <li><a href="lista_haberes.html">Administrar Haberes</a></li>
+                                           <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
+                                         
+                                           
     
                                         </ul>
                                     </li>
@@ -1104,6 +1103,7 @@
                                         <ul class="collapse">
                                             <li><a href="lista_trab_finiquitos.html">Calcular Finiquito</a></li>
                                            
+    
                                         </ul>
                                     </li>
     
@@ -1125,33 +1125,33 @@
 
                                 <li class="list-divider"></li>
 
-                           
-                               <!--Category name-->
-                               <li class="list-header">MANTENEDORES</li>
-                                  
-                               <!--Menu list item-->
-                               <li>
+
+                                <!--Category name-->
+                                <li class="list-header">MANTENEDORES</li>
+
+                                <!--Menu list item-->
+                                <li>
                                     <a href="#">
                                         <i class="demo-pli-computer-secure"></i>
                                         <span class="menu-title">INTERNOS</span>
                                         <i class="arrow"></i>
-                                    </a>  
-                                     <!--Submenu-->
+                                    </a>
+                                    <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
 
 
-                                    </ul> 
+                                    </ul>
                                     <ul class="collapse">
-                                            <li><a href="lista_sector.html">Sector</a></li>
-    
-    
-                                    </ul> 
+                                        <li><a href="lista_sector.html">Sector</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
-                                           <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-    
-    
-                                    </ul> 
+                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
@@ -1167,9 +1167,11 @@
     
     
                                     </ul> 
-                                   
-                             </li>
-                            
+
+                                </li>
+
+
+
 
                                 <li class="list-divider"></li>
 
@@ -1187,12 +1189,14 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="solicitar_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="lista_permisos.html">Permisos</a></li> 
+                                        <li><a href="solicitar_permiso.html">Permisos</a></li>
                                         <li><a href="solicitar_anticipo.html">Anticipo</a></li>
+                                        
 
 
                                     </ul>
                                 </li>
+
                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-computer-secure"></i>
@@ -1225,8 +1229,8 @@
                                     </ul>
                                 </li>
 
-                               <!--Menu list item-->
-                               <li>
+                              <!--Menu list item-->
+                              <li>
                                     <a href="#">
                                         <i class="demo-pli-mail"></i>
                                         <span class="menu-title">Comunicados</span>
