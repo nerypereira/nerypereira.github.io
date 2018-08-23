@@ -40,10 +40,9 @@
 
     <!--Demo [ DEMONSTRATION ]-->
 
-   <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
+    <!--<link href="css/demo/nifty-demo.min.css" rel="stylesheet">-->
 
-  <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
-
+    <!--  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
 
 
 
@@ -72,6 +71,9 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
+
+    <style type="text/css">
+    </style>
 
 </head>
 
@@ -166,12 +168,12 @@
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>Noticias</p>
                                         <p class="pad-top mar-top bord-top text-sm"> Se comunica que....
-                                            </p>
+                                        </p>
                                     </div>
                                     <div class="col-sm-4 col-md-3">
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                           
+
                                             <li>
                                                 <a href="#" class="media mar-btm">
                                                     <div class="media-left">
@@ -183,8 +185,8 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            
-                                            
+
+
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
@@ -219,6 +221,7 @@
 
 
 
+
                         <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li class="dropdown">
@@ -233,7 +236,7 @@
                                 <div class="nano scrollable">
                                     <div class="nano-content">
                                         <ul class="head-list">
-                                            
+
                                             <li>
                                                 <a class="media" href="#">
                                                     <div class="media-left">
@@ -349,6 +352,7 @@
                         <!--End user dropdown-->
 
 
+
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -374,17 +378,17 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Solicitud de</h1>
+                        <h1 class="page-header text-overflow">Solicitudes Pendientes</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
-
+                    
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
-                        <li><a href="#">PERSONAL</a></li>
+                        <li><a href="#">Portal del Trabajador</a></li>
                         <li class="active">Vacaciones</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -397,67 +401,90 @@
                 <!--===================================================-->
                 <div id="page-content">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-12">
+
+                            <!-- Add Row -->
+                            <!--===================================================-->
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Solicitar</h3>
+                                    <h3 class="panel-title">Solicitudes de Vacaciones</h3>
                                 </div>
+
                                 <div class="panel-body">
                                     <div class="row">
-                                           
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Cantidad de Días</label>
-                                                <input type="text" class="form-control">
+
+                                        <div class="col-sm-10">
+
+                                            <div class="input-group mar-btm">
+                                                <input type="text" placeholder="Buscar Fecha, etc" class="form-control">
+                                                <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Buscar</button>
+					                        </span>
                                             </div>
-                                        </div>
 
+                                         </div>
+                                         <div class="col-sm-2">
+                                                <a href="solicitar_vacaciones.html"> <button class="btn btn-success" type="submit">Nuevo</button></a>
+              
+                                             </div>
+                                       
                                     </div>
+                                    <div class="row"></div>
 
-                                                              
                                    
 
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Fecha Inicio</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Fecha Término</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
+                                        <div class="col-sm-12">
+                                            <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="min-tablet">Cant. de Días</th>
+                                                        <th class="min-tablet">Fecha de solicitud</th></th>
+                                                        <th class="min-desktop">Fecha Fecha de Inicio</th>
+                                                        <th class="min-desktop">Fecha Fecha de Término</th>
+                                                        <th class="min-desktop">Estado</th>                                                       
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                                                            
+                                                       
+                                                        <td>2</td>
+                                                        <td>01/07/2018</td>
+                                                        <td>03/07/2018</td>
+                                                        <td>04/07/2018</td>                                                           
+                                                        <td>Autorizado</td>                                         
+                                                       
+                                                        
+                                                    </tr>
+                                                   
+                                                  
+
+
+
+                                                </tbody>
+                                            </table>
+
                                         </div>
 
                                     </div>
-                                    <div class="row">
-                                               
-                                            <div class="col-sm-12">
-                                                <div class="panel-footer text-right">
-                                                        <a href="lista_vacaciones.html"> <button class="btn btn-success" type="submit">Enviar</button></a>
-                                                </div>
-                                    
-                                            </div>
-            
 
-                                </div>
-                                                
-                                 
 
-                                  
+
                                 </div>
                             </div>
+
                         </div>
 
 
 
-                       
 
                     </div>
-                  
+
                 </div>
+
+
+
                 <!--===================================================-->
                 <!--End page content-->
 
@@ -465,7 +492,7 @@
 
 
             </div>
-            
+
 
         </div>
         <!--===================================================-->
@@ -508,7 +535,7 @@
                         <!--================================-->
                         <div class="tab-content">
 
-                           <!--First tab (Contact list)-->
+                            <!--First tab (Contact list)-->
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <div class="tab-pane fade in active" id="demo-asd-tab-1">
                                 <p class="pad-all text-main text-sm text-uppercase text-bold">
@@ -529,7 +556,7 @@
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <div class="media-left pos-rel">
-                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">                                            
+                                            <img class="img-circle img-xs" src="img/profile-photos/5.png" alt="Profile Picture">
                                             <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
                                         </div>
                                         <div class="media-body">
@@ -601,13 +628,12 @@
                                 </div>
 
 
-                               
+
 
 
                             </div>
                             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                             <!--End first tab (Contact list)-->
-
 
 
                             <!--Second tab (Custom layout)-->
@@ -750,7 +776,6 @@
         <!--===================================================-->
         <!--END ASIDE-->
 
-
         <!--MAIN NAVIGATION-->
         <!--===================================================-->
         <nav id="mainnav-container">
@@ -855,7 +880,7 @@
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
-                                            <i class="demo-pli-split-vertical-2"></i>
+                                        <i class="demo-pli-split-vertical-2"></i>
                                          <span class="menu-title">Reclutamiento</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -884,14 +909,14 @@
 
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
-                                         <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
+                                             <li><a href="lista_trabajadores.html">Ficha Personal</a></li>
+                                        <li><a href="mant_cargas.html">Ingreso de Cargas Familiares</a></li>
                                          <li><a href="lista_trab_anexos.html">Ingreso Anexo Contrato</a></li>
 
                                     </ul>
                                 </li>
-                                <!--Menu list item-->
-                                <li>
+                                 <!--Menu list item-->
+                                 <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
                                             <span class="menu-title">Licencias/Orden Reposo</span>
@@ -920,7 +945,8 @@
                                             
                                         </ul>
                                     </li>   
-                                     <!--Menu list item-->
+
+                                 <!--Menu list item-->
                                  <li>
                                         <a href="#">
                                             <i class="demo-pli-split-vertical-2"></i>
@@ -933,7 +959,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>    
+                                    </li>   
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -947,7 +973,8 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>        
+                                    </li>       
+                                          
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -980,8 +1007,7 @@
 
                                     </ul>
                                 </li>
-                                 
-
+                                
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1033,7 +1059,8 @@
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
                                           
-                                         
+                                          
+    
                                         </ul>
                                     </li>
     
@@ -1050,7 +1077,7 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                             <li><a href="lista_trab_finiquitos.html">Calcular Finiquito</a></li>
-                                           
+                                
     
                                         </ul>
                                     </li>
@@ -1070,36 +1097,36 @@
                                            
                                         </ul>
                                     </li>
-                               
-                                
+
                                 <li class="list-divider"></li>
 
-                                  <!--Category name-->
-                                  <li class="list-header">MANTENEDORES</li>
 
-                               <!--Menu list item-->
-                               <li>
+                                <!--Category name-->
+                                <li class="list-header">MANTENEDORES</li>
+
+                                <!--Menu list item-->
+                                <li>
                                     <a href="#">
                                         <i class="demo-pli-computer-secure"></i>
                                         <span class="menu-title">INTERNOS</span>
                                         <i class="arrow"></i>
-                                    </a>  
-                                     <!--Submenu-->
+                                    </a>
+                                    <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="mant_sala_cuna.html">Sala Cuna</a></li>
 
 
-                                    </ul> 
+                                    </ul>
                                     <ul class="collapse">
-                                            <li><a href="lista_sector.html">Sector</a></li>
-    
-    
-                                    </ul> 
+                                        <li><a href="lista_sector.html">Sector</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
-                                            <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
-    
-    
-                                    </ul> 
+                                       <li><a href="lista_tipo_ley.html">Tipo Ley</a></li>
+
+
+                                    </ul>
                                     <ul class="collapse">
                                             <li><a href="lista_cargo.html">Cargo</a></li>
     
@@ -1115,13 +1142,13 @@
     
     
                                     </ul> 
-                                   
-                             </li>
-                            
 
-                           
+                                </li>
 
-                            <li class="list-divider"></li>
+
+
+
+                                <li class="list-divider"></li>
 
                                 <!--Category name-->
                                 <li class="list-header">Portal del Trabajador</li>
@@ -1139,9 +1166,7 @@
                                         <li><a href="lista_vacaciones.html">Vacaciones</a></li>
                                         <li><a href="lista_permisos.html">Permisos</a></li>
                                         <li><a href="lista_anticipos.html">Anticipo</a></li>
-                                       
-
-
+                                        
                                     </ul>
                                 </li>
                                 <li>
@@ -1154,7 +1179,7 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                              <li><a href="obtener_liquidaciones.html">Obtener Liquidaciones</a></li>
-                                             <li><a href="obtener_certificados.html">Certificados</a></li>   
+                                             <li><a href="obtener_certificados.html">Certificados</a></li>  
                                            <li><a href="lista_cont_anexos.html">Contratos y Anexos</a></li>                                    
                                         </ul>
                                     </li>
@@ -1177,22 +1202,22 @@
                                     </ul>
                                 </li>
 
-                                <!--Menu list item-->
-                                <li>
-                                        <a href="#">
-                                            <i class="demo-pli-mail"></i>
-                                            <span class="menu-title">Comunicados</span>
-                                            <i class="arrow"></i>
-                                        </a>
-    
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-                                            <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
-                                           
-    
-    
-                                        </ul>
-                                    </li>
+                               <!--Menu list item-->
+                               <li>
+                                    <a href="#">
+                                        <i class="demo-pli-mail"></i>
+                                        <span class="menu-title">Comunicados</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
+                                    <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li><a href="ver_cargos_publicados.html">Cargos ofrecidos</a></li>
+                                       
+
+
+                                    </ul>
+                                </li>
 
 
 
