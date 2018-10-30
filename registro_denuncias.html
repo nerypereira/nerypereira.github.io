@@ -375,7 +375,7 @@
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
-                        <h1 class="page-header text-overflow">Ver Entrega de EPP</h1>
+                        <h1 class="page-header text-overflow">Registro de Denuncia</h1>
                     </div>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End page title-->
@@ -386,7 +386,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
                         <li><a href="#">Personal</a></li>
-                        <li class="active">EPP</li>
+                        <li class="active">Registro de Denuncia</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -401,137 +401,82 @@
                         <div class="col-sm-8">
                             <div class="panel">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title"> Ver EPP</h3>
+                                    <h3 class="panel-title">Denuncia</h3>
                                 </div>
                                 <div class="panel-body">
                                         <div class="row">
                                                 <div class="panel-footer text-right">
-                                                        <a href="lista_epp.html">  <button class="btn btn-success" type="submit">Volver</button></a>
+                                                        <a href="lista_denuncias.html">  <button class="btn btn-success" type="submit">Guardar</button></a>
                                                </div>
 
                                         </div>
 
                                     <div class="row">
-                                                <div class="col-sm-6">
-                                                     <div class="form-group">
-                                                        <label class="control-label">Rut</label>
-                                                        <input type="text" class="form-control"  placeholder="12.945.987-7">
-                                                       
-                                                    </div>
-                                                </div>
-                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">EPP</label>
-                                                        <input type="text" class="form-control"  placeholder="Guantes">
-                                                    </div>
-                                                </div>
+                                            <div class="col-sm-4">
+                                                    <div class="checkbox">
+                                                            <input id="demo-form-checkbox1" class="magic-checkbox" type="checkbox" >
+                                                           <label for="demo-form-checkbox1">Anónimo</label>
+                                                       </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="form-group">
+                                                    <label class="control-label">Causal </label>
+                                                    <select class="form-control" data-placeholder="Seleccione..." id="demo-chosen-select" tabindex="2">
+                                                            <option value="">Seleccione...</option>
+                                                            <option value="femenino">Despido Injustificado</option>
+                                                            <option value="masculino">Condiciones Laborales</option>    
+                                                            <option value="masculino">Otros</option>                                                                 
+                                                        </select>
+                                                 </div>
+                                            </div>
 
                                     </div>
-                                    
-
                                     <div class="row">
-                                               
-                                                <div class="col-sm-12">
+                                            <div class="col-sm-4">
                                                     <div class="form-group">
-                                                        <label class="control-label">Nombre del Trabajador</label>
-                                                        <input type="text" class="form-control"  placeholder="Camila Castro">
-                                                    </div>
-                                                </div>
-                                    </div> 
-                                    <div class="row">
-                                            <div class="col-sm-6">
-                                                     <div class="form-group">
-                                                <label class="control-label">Fecha Entrega</label>
-                                                <input type="text" class="form-control"  placeholder="20/07/2018">
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label">Fecha Cambio</label>
-                                                        <input type="text" class="form-control"  placeholder="20/08/2018">
+                                                            <label class="control-label">Rut</label>
+                                                            <input type="text" class="form-control">
                                                     </div>
                                             </div>
-
-
-                                    </div> 
-
-
-                                   <div class="row">
-                                               
-                                            <div class="col-sm-12">
-                                                
-                                                         <button class="btn btn-success" type="submit">Seleccione Archivo...</button>
-                                          
-                                    
-                                            </div>
-            
-
-                                    </div>
-                                        <div class="row">
-                                                <div class="col-sm-12">
-                                                        <table id="demo-dt-addrow" class="table table-condensed table-striped table-bordered" cellspacing="0" width="100%">
-                                                                <thead>
-                                                                    <tr>
-                                                                       
-                                                                        <th>Documento</th>
-                                                                        <th >Fecha</th> 
-                                                                                                                            
-                                                                      
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        
-                                                                        <td>Recibo.pdf</td>
-                                                                        <td>23/03/2018</td>
-                                                                      
-                                                                                                                                         
-                                                                    </tr>
-                                                                   
-                                                                  
-                                                                </tbody>
-                                                            </table>
-                                                </div>
-                                            </div>
-                                    
-                                            <div class="row">
-                                                    <div class="=col-sm-12">
-                                                            <div class="bord-top pad-ver">
-                                                                  
-                                                        
-                                                                    <div class="btn-group pull-right">
-                                                                            
-                                                                        <button id="dz-upload-btn" class="btn btn-primary" type="submit" disabled="">
-                                                                            <i class="fa fa-upload-cloud"></i> Descargar
-                                                                        </button>
-                                                                        <button id="dz-remove-btn" class="btn btn-danger cancel" type="reset" disabled="">
-                                                                            <i class="demo-psi-trash"></i>
-                                                                        </button>
-                                                                    </div>
-                                                            </div>
-                                                    </div>
-        
-                                                </div> 
                                             
-                                                
+                                            <div class="col-sm-8">
+                                                <div class="form-group">
+                                                    <label class="control-label">Nombre del Trabajador</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                    </div>
+                               
+
+                                    <div class="row">
+                                               
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Descripción</label>
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                    </div> 
+                                   
+                                    <div class="row">
+                                            <div class="=col-sm-12">
+                                                    <div class="bord-top pad-ver">
+                                                            <!-- The fileinput-button span is used to style the file input field as button -->
+                                                            <span class="btn btn-success fileinput-button dz-clickable">
+                                                                <i class="fa fa-plus"></i>
+                                                                <span>Adjuntar Archivo...</span>
+                                                            </span>
+                                                                                                          
+                                                    </div>
+                                            </div>
+
+                                    </div> 
                                     
-                                   
-                                                        
-                                  
-
-                                                
-                                   
-                             
-
                                 </div>
                             </div>
                         </div>
-
-                       
-                      
-
                     </div>
-                   
                 </div>
                
                 <!--===================================================-->
@@ -1007,7 +952,7 @@
                                             <li><a href="autorizar_vacaciones.html">Autorizar Vacaciones</a></li>
                                             
                                         </ul>
-                                    </li>       
+                                    </li>  
                                      <!--Menu list item-->
                                  <li>
                                         <a href="#">
@@ -1021,7 +966,7 @@
                                             <li><a href="autorizar_anticipo.html">Autorizar Anticipos</a></li>
                                             
                                         </ul>
-                                    </li>         
+                                    </li>              
 
                                 <!--Menu list item-->
                                 <li>
@@ -1050,33 +995,34 @@
                                    <!--Submenu-->
                                    <ul class="collapse">                                        
                                         <li><a href="mant_bienestar.html">Publicar Actividades</a></li>
-                                       <li><a href="lista_trab_sala_cuna.html">Administrar Beneficios</a></li>
+                                      <li><a href="lista_trab_sala_cuna.html">Administrar Beneficios</a></li>
                                         
 
                                     </ul>
                                 </li>
-                               <!--Menu list item-->
-                               <li>
-                                <a href="#">
-                                    <i class="demo-pli-split-vertical-2"></i>
-                                    <span class="menu-title">Beneficios</span>
-                                    <i class="arrow"></i>
-                                </a>
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="#">
+                                        <i class="demo-pli-split-vertical-2"></i>
+                                        <span class="menu-title">Beneficios</span>
+                                        <i class="arrow"></i>
+                                    </a>
 
-                                <!--Submenu-->
-                                <ul class="collapse">                                        
-                                    <li><a href="lista_beneficios.html">Crear Beneficio</a></li>
-                                   
-                                    
+                                    <!--Submenu-->
+                                    <ul class="collapse">                                        
+                                        <li><a href="lista_beneficios.html">Crear Beneficio</a></li>
+                                       
+                                        
 
-                                </ul>
-                                <ul class="collapse">                                        
-                                    <li><a href="lista_trab_sala_cuna.html">Ver Beneficio Sala Cuna</a></li>
-                                   
-                                    
+                                    </ul>
+                                    <ul class="collapse">                                        
+                                        <li><a href="lista_trab_sala_cuna.html">Ver Beneficio Sala Cuna</a></li>
+                                       
+                                        
 
-                                </ul>
-                            </li>
+                                    </ul>
+                                </li>
+
                                 <!--Menu list item-->
                                 <li>
                                     <a href="#">
@@ -1089,7 +1035,7 @@
                                     <ul class="collapse">
                                             <li><a href="lista_cursos_prev.html">Crear Cursos</a></li>
                                             <li><a href="lista_capacitacion_asignar.html">Ingresar Participantes</a></li>
-                                            <li><a href="entrega_epp.html">Entrega de EPP</a></li>
+                                            <li><a href="lista_epp.html">Entrega de EPP</a></li>
                                             <li><a href="comite_paritario.html">Comité Paritario</a></li>
                                            <li><a href="lista_accidentes.html">Registro de Accidentes</a></li>
                                             <li><a href="lista_investigaciones.html">Investigación de Accidentes</a></li>
@@ -1128,7 +1074,6 @@
                                             <li><a href="lista_haberes.html">Administrar Haberes</a></li>
                                             <li><a href="lista_descuentos.html">Administrar Descuentos</a></li>
                                           
-                                         
     
                                         </ul>
                                     </li>
@@ -1146,7 +1091,8 @@
                                         <!--Submenu-->
                                         <ul class="collapse">
                                             <li><a href="lista_trab_finiquitos.html">Calcular Finiquito</a></li>
-                                            
+                                           
+    
                                         </ul>
                                     </li>
     
@@ -1230,7 +1176,7 @@
                                     <!--Submenu-->
                                     <ul class="collapse">
                                         <li><a href="lista_vacaciones.html">Vacaciones</a></li>
-                                        <li><a href="lista_permisos.html">Permisos</a></li> 
+                                         <li><a href="lista_permisos.html">Permisos</a></li> 
                                         <li><a href="lista_anticipos.html">Anticipo</a></li>
 
 
